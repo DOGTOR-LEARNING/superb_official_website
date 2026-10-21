@@ -10,7 +10,7 @@ spec §15、§17、§18 要求上線前完成內容與品牌審核。
 - [x] 統一編號 62214225、地址、電話（與 DOGTOR 官網 `lib/company.js` 一致）
 - [x] 英文正式全名：SuperB Software Technology Co., Ltd.
 - [x] DOGTOR 官網 https://dogtor.superb-tutor.com 與 App Store／Google Play 連結
-- [ ] 公司官網正式網域 → 設定 `NEXT_PUBLIC_SITE_URL`（設定前 robots.txt 會禁止索引）
+- [ ] 公司官網網域 `official.superb-tutor.com` → 在 Vercel Production 設定 `NEXT_PUBLIC_SITE_URL=https://official.superb-tutor.com`（設定前 robots.txt 會禁止索引）
 - [ ] 可公開的社群連結（`socialLinks`）
 
 ## 環境變數

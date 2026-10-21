@@ -9,7 +9,7 @@
 export type PendingValue<T> = { value: T; placeholder: boolean };
 
 export const siteConfig = {
-  /** 正式網域（TODO：取得官方網域後設定 NEXT_PUBLIC_SITE_URL） */
+  /** 正式網域：https://official.superb-tutor.com（於 Vercel Production 設定 NEXT_PUBLIC_SITE_URL） */
   siteUrl: {
     value: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.superb.example").replace(/\/$/, ""),
     placeholder: !process.env.NEXT_PUBLIC_SITE_URL,
