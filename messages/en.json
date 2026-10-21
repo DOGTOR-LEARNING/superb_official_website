@@ -1,0 +1,567 @@
+{
+  "Common": {
+    "skipToContent": "Skip to main content",
+    "exploreDogtor": "Explore DOGTOR",
+    "opensInNewTab": "(opens in a new tab)",
+    "breadcrumbLabel": "Breadcrumb",
+    "home": "Home",
+    "viewProject": "View Project",
+    "readMore": "Read more",
+    "pending": "Pending",
+    "pendingHint": "Not yet approved by the company — replace before launch (shown in development only)",
+    "placeholderImage": "Image placeholder",
+    "loading": "Loading…",
+    "draft": "Draft",
+    "playVideo": "Play video"
+  },
+  "Nav": {
+    "primary": "Primary navigation",
+    "home": "Home",
+    "work": "Products & Work",
+    "about": "About Us",
+    "insights": "Insights",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "language": "Language",
+    "switchTo": "Switch to Traditional Chinese",
+    "currentLanguage": "Current language: English",
+    "logoLabel": "SuperB home"
+  },
+  "Footer": {
+    "tagline": "Building technology that makes a difference.",
+    "explore": "Explore",
+    "company": "Company",
+    "connect": "Connect",
+    "privacy": "Privacy Policy",
+    "email": "Email",
+    "taxId": "Tax ID",
+    "social": "Social",
+    "dogtorNote": "For DOGTOR subscriptions, sign-in and product support, please visit the DOGTOR website.",
+    "rights": "All rights reserved.",
+    "trademark": "DOGTOR is a SuperB product. Rights to other works are as stated on each project page.",
+    "address": "Address",
+    "phone": "Phone"
+  },
+  "Meta": {
+    "siteName": "SuperB Software Technology",
+    "titleTemplate": "%s | SuperB Software Technology",
+    "defaultTitle": "SuperB Software Technology | Human-centered EdTech",
+    "defaultDescription": "SuperB is a Taipei EdTech company building with AI, design and engineering. Our flagship product is DOGTOR, an AI learning app for secondary school students.",
+    "work": {
+      "title": "Products & Work",
+      "description": "From our AI learning app DOGTOR to cross-disciplinary digital products — explore how the SuperB team creates value with technology."
+    },
+    "dogtor": {
+      "title": "DOGTOR | Product Story",
+      "description": "Why we built DOGTOR: how SuperB combines AI, learning design and software engineering to help secondary school students find the concepts they truly need to work on."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Starting with education, centered on people. The SuperB story, mission and vision, principles, team and capabilities."
+    },
+    "insights": {
+      "title": "Insights",
+      "description": "Perspectives, product notes and research explorations from the SuperB team on education technology, AI, HCI and product design."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Education partnerships, product collaborations, business enquiries or other ideas — we'd love to hear from you."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Privacy policy for the SuperB Software Technology website: what we collect, how we use and protect it."
+    },
+    "notFound": {
+      "title": "Page not found"
+    },
+    "keywords": "SuperB Software Technology,SuperB,education technology,EdTech,AI learning,DOGTOR,learning app Taiwan,human-computer interaction,Taipei"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "HUMAN-CENTERED TECHNOLOGY",
+      "title": "Building technology that <hl>makes a difference</hl>.",
+      "supporting": "We bring together AI, thoughtful design, and software engineering to create meaningful digital experiences, starting with education.",
+      "primaryCta": "Explore our products",
+      "secondaryCta": "Meet SuperB",
+      "visualLabel": "A geometric brand graphic derived from the SuperB logo: rounded diamonds with interlaced blue and gold lines"
+    },
+    "dogtor": {
+      "eyebrow": "OUR FLAGSHIP PRODUCT",
+      "title": "Bringing every study session <hl>closer to real understanding</hl>.",
+      "productName": "DOGTOR",
+      "description": "DOGTOR is an AI learning app built for junior and senior high school students in Taiwan. It combines concept-based practice, weakness diagnosis, AI problem-solving and interactive learning to help students find the concepts they truly need to strengthen.",
+      "featuresLabel": "Highlights",
+      "features": {
+        "personalized": "AI-assisted personalized learning",
+        "tracking": "Concept practice and weakness tracking",
+        "game": "Gamified interaction and friend battles",
+        "parents": "Progress and insights for parents"
+      },
+      "primaryCta": "Visit DOGTOR website",
+      "secondaryCta": "Read the product story",
+      "screensLabel": "DOGTOR app screens"
+    },
+    "beliefs": {
+      "eyebrow": "WHAT WE BELIEVE",
+      "title": "Good technology should <hl>start with people</hl>.",
+      "items": {
+        "accessible": {
+          "label": "Make Learning Accessible",
+          "title": "Good education should be easier to reach.",
+          "body": "Through software and AI, we want to lower the barriers to quality learning so more students can grow in ways that suit them."
+        },
+        "people": {
+          "label": "Design for People",
+          "title": "Understanding needs matters more than chasing tech.",
+          "body": "We care about real contexts of use, the experience people have, and how technology fits into everyday life."
+        },
+        "impact": {
+          "label": "Build for Impact",
+          "title": "Turning good ideas into reality.",
+          "body": "From discovering problems and designing experiences to building and improving, we believe a product's value comes from real use."
+        }
+      }
+    },
+    "work": {
+      "eyebrow": "BEYOND THE CLASSROOM",
+      "title": "Starting with education, <hl>exploring what's possible</hl>.",
+      "supporting": "Beyond education technology, we keep exploring AI applications, digital platforms and human-centered product design. These projects capture how our team members turn ideas into working products.",
+      "cta": "Explore more work"
+    },
+    "build": {
+      "eyebrow": "FROM IDEAS TO IMPACT",
+      "title": "From real problems to products <hl>people actually use</hl>.",
+      "steps": {
+        "discover": {
+          "label": "Discover",
+          "body": "Understand people, their context, and the problem that truly needs solving."
+        },
+        "design": {
+          "label": "Design",
+          "body": "Shape the experience, validate ideas and design interaction flows."
+        },
+        "build": {
+          "label": "Build",
+          "body": "Combine AI, software engineering and system architecture into a working product."
+        },
+        "learn": {
+          "label": "Learn & Improve",
+          "body": "Keep improving with feedback and data from real use."
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "MEET SUPERB",
+      "title": "People who believe technology <hl>can make a difference</hl>.",
+      "body": "We combine perspectives from education, software development and product design to keep finding problems worth solving — and turn ideas into warm, genuinely usable technology.",
+      "cta": "Get to know us",
+      "storyLabel": "Our journey",
+      "teamLabel": "The SuperB core team"
+    },
+    "cta": {
+      "title": "Let's build better possibilities, together.",
+      "body": "Whether you work in education, in tech, or simply have an idea worth building, we'd love to talk.",
+      "button": "Get in touch"
+    }
+  },
+  "Story": {
+    "observe": {
+      "label": "2023",
+      "title": "Partnering with Superb Education",
+      "body": "We began working with the tutoring school Superb Education, stepping into frontline teaching — where we saw students put hours into revision without knowing where they were stuck."
+    },
+    "solve": {
+      "label": "2024",
+      "title": "Solving the problems around us",
+      "body": "Starting from everyday pain points in the classroom, we built SuperBot for Superb Education — a LINE assistant automating class reminders, check-ins and hour tracking."
+    },
+    "dogtor": {
+      "label": "2026.03",
+      "title": "DOGTOR launches",
+      "body": "Built by NTU students together with Superb Education's teachers, and advised by NTU professors, DOGTOR launched and reached #4 in App Store Education in its first month."
+    },
+    "explore": {
+      "label": "2026.10",
+      "title": "Over 10,000 users",
+      "body": "DOGTOR passed 10,000 registered users. We keep working with educators to explore how AI can better support learning and understanding."
+    }
+  },
+  "Work": {
+    "hero": {
+      "eyebrow": "PRODUCTS & WORK",
+      "title": "Good products <hl>start with understanding the problem</hl>.",
+      "supporting": "From AI learning apps to cross-disciplinary digital products, we explore how technology creates value in different contexts."
+    },
+    "featured": {
+      "eyebrow": "FLAGSHIP PRODUCT",
+      "type": "AI learning app | iOS · Android",
+      "positioning": "An AI learning app built for secondary school students in Taiwan.",
+      "problemLabel": "The problem",
+      "problem": "Traditional revision often turns into endless drilling, without students knowing which concepts they actually struggle with. DOGTOR starts from concepts, so every practice session has direction.",
+      "metricsLabel": "Results",
+      "screensLabel": "Selected app screens"
+    },
+    "selected": {
+      "eyebrow": "SELECTED WORK",
+      "title": "More work",
+      "supporting": "These include projects our team members have worked on, past and present. Each card states how we were involved and the project's status.",
+      "notice": "Relationship labels describe how we were involved. They do not imply every project is owned by the company."
+    },
+    "filter": {
+      "label": "Filter projects by category",
+      "all": "All",
+      "education": "Education",
+      "ai-apps": "AI & Apps",
+      "social-impact": "Social Impact",
+      "business-systems": "Business Systems",
+      "count": "{count, plural, =0 {No matching projects} one {# project} other {# projects}}",
+      "empty": "There are no public projects in this category yet.",
+      "emptyAction": "View all projects"
+    }
+  },
+  "Category": {
+    "education": "Education",
+    "ai-apps": "AI & Apps",
+    "social-impact": "Social Impact",
+    "business-systems": "Business Systems"
+  },
+  "Status": {
+    "live": "Live",
+    "completed": "Completed",
+    "prototype": "Prototype",
+    "in-progress": "In Progress",
+    "research": "Research Project",
+    "archived": "Historical Work"
+  },
+  "Relationship": {
+    "flagship-product": "Flagship Product",
+    "team-member-project": "Team Member Project",
+    "team-capstone": "NTU Team Capstone",
+    "team-led-project": "Team-Led Project",
+    "collaborative-project": "Collaborative Project",
+    "selected-work": "Selected Work",
+    "client-work": "Client Work"
+  },
+  "Project": {
+    "breadcrumbWork": "Products & Work",
+    "year": "Year",
+    "type": "Type",
+    "status": "Status",
+    "relationship": "Relationship",
+    "challenge": "The Challenge",
+    "challengeTitle": "What we set out to solve",
+    "approach": "Our Approach",
+    "approachTitle": "How we designed and built it",
+    "features": "Key Features",
+    "featuresTitle": "Main features",
+    "showcase": "Product Showcase",
+    "showcaseTitle": "Interface and flow",
+    "technology": "Technology & Design",
+    "technologyTitle": "Technical and design decisions",
+    "stackLabel": "Technology",
+    "involvement": "Our Involvement",
+    "involvementTitle": "What we actually did",
+    "outcomes": "Outcomes",
+    "outcomesTitle": "Results, limits and research status",
+    "credits": "Credits & Attribution",
+    "creditsTitle": "Collaborators and attribution",
+    "next": "Next Project",
+    "nextLabel": "Next project",
+    "prototypeNotice": "This project is a {status} and is not commercially operated. It documents our team's exploration and build process.",
+    "externalLinks": "Related links",
+    "outcomeKind": {
+      "outcome": "Outcome",
+      "limitation": "Limitation",
+      "status": "Current status"
+    },
+    "userFlowTitle": "User flow",
+    "videoTitle": "Demo video"
+  },
+  "Dogtor": {
+    "breadcrumb": "DOGTOR",
+    "hero": {
+      "eyebrow": "FLAGSHIP PRODUCT · DOGTOR",
+      "title": "DOGTOR",
+      "subtitle": "Helping every student find <hl>a way of learning that fits</hl>.",
+      "body": "DOGTOR is an AI learning app developed and operated by SuperB Software Technology. This is its story: why we built it, which learning problem it tackles, and what we want to explore next."
+    },
+    "problem": {
+      "eyebrow": "THE PROBLEM",
+      "title": "Studying hard, without knowing where you're stuck.",
+      "body": "Traditional revision often turns into endless drilling, without revealing the concepts students actually struggle with. Students put in the time but can't focus it where it matters most — and parents find it hard to understand how their children are doing.",
+      "points": {
+        "volume": "Lots of practice, little direction",
+        "blind": "Scores are visible; weak concepts are not",
+        "motivation": "Repetition drains motivation"
+      }
+    },
+    "approach": {
+      "eyebrow": "OUR APPROACH",
+      "title": "Start from concepts, so practice has direction.",
+      "body": "A knowledge graph connects questions, knowledge scores and review timing; AI and game-like design keep students practising and show them what comes next.",
+      "items": {
+        "knowledge": {
+          "title": "Knowledge graph and scores",
+          "body": "Answers map to knowledge points, scoring mastery of each concept and scheduling personalized review by performance and timing."
+        },
+        "ai": {
+          "title": "AI question bank with multi-model checks",
+          "body": "Questions are generated by curriculum, chapter and knowledge point, then cross-checked by multiple models — covering nearly all Taiwanese secondary subjects plus SAT and AP."
+        },
+        "personal": {
+          "title": "An AI companion that remembers",
+          "body": "The conversational AI remembers each student's struggles, interests and study context, adapting its responses and concept hints."
+        },
+        "play": {
+          "title": "Playful and social",
+          "body": "Learning islands, friends and live battles turn revision into a habit students want to open every day."
+        }
+      }
+    },
+    "inAction": {
+      "eyebrow": "PRODUCT IN ACTION",
+      "title": "Real product screens and flow",
+      "steps": {
+        "practice": "Simulated tests: instant feedback, tracking mastery of every knowledge point",
+        "diagnose": "Error classification: uploaded questions map to knowledge points and build a personal error log",
+        "ai": "AI companion: remembers each student's weak spots and context to give the right hints",
+        "progress": "Parent reports: daily learning results delivered straight to LINE"
+      },
+      "videoTitle": "App introduction video",
+      "reportsTitle": "Daily learning reports (real screens)"
+    },
+    "impact": {
+      "eyebrow": "IMPACT",
+      "title": "Being genuinely used by students is the result we care about most.",
+      "body": "We only publish verified, dated figures and update them regularly."
+    },
+    "beyond": {
+      "eyebrow": "BEYOND FEATURES",
+      "title": "Not just features — a way to understand learning.",
+      "body": "DOGTOR's value goes beyond features. We learn from real study behaviour, and the team is conducting HCI research related to DOGTOR on how AI can help students while leaving room for thinking and understanding — the research is ongoing, with no formal findings yet.",
+      "cta": "Read our perspective"
+    },
+    "cta": {
+      "title": "Want the full feature list or to download the app?",
+      "body": "Features, downloads, subscriptions and support all live on the DOGTOR website.",
+      "button": "Visit DOGTOR website",
+      "appStore": "Download on the App Store",
+      "googlePlay": "Get it on Google Play"
+    }
+  },
+  "About": {
+    "hero": {
+      "eyebrow": "ABOUT SUPERB",
+      "title": "Starting with education, <hl>centered on people</hl>.",
+      "supporting": "We believe technology's value comes not only from what it can do, but from who it helps."
+    },
+    "story": {
+      "eyebrow": "OUR STORY",
+      "title": "It began with something we noticed in education.",
+      "body": "SuperB began in the tutoring classroom. Since 2023 we have worked with Superb Education, stepping into frontline teaching — and having gone through Taiwan's exam system ourselves, we now teach other students too. We saw that many students do want to learn, but traditional practice lacks instant interaction and feedback, making it hard to keep a rhythm or see where they're really stuck. So our NTU student team joined forces with Superb Education's teachers, guided by NTU professors, to build DOGTOR. Along the way we learned to start from real users and improve from feedback, and we now bring that approach to more areas."
+    },
+    "mission": {
+      "eyebrow": "MISSION",
+      "body": "Use technology to lower the barriers to learning and digital services, building products that are simple, effective and human-centered."
+    },
+    "vision": {
+      "eyebrow": "VISION",
+      "body": "Good technology that serves not just a few, but helps many more people explore, learn and grow."
+    },
+    "principles": {
+      "eyebrow": "OUR PRINCIPLES",
+      "title": "Four principles behind every decision.",
+      "items": {
+        "purpose": {
+          "title": "Education with Purpose",
+          "body": "Education is where we started. Every feature we build should help real learning happen."
+        },
+        "human": {
+          "title": "Human-Centered Design",
+          "body": "We start from people's real situations, so technology adapts to people — not the other way round."
+        },
+        "engineering": {
+          "title": "Thoughtful Engineering",
+          "body": "Reliable, maintainable, trustworthy engineering is the foundation of a good experience."
+        },
+        "learning": {
+          "title": "Continuous Learning",
+          "body": "We learn from data and feedback, keep improving our products, and keep growing as a team."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "OUR TEAM",
+      "title": "The people building SuperB.",
+      "advisors": "Advisors and partners",
+      "advisorsEmpty": "Advisor and faculty details will be published once consent is confirmed.",
+      "photoAlt": "Photo of {name}",
+      "links": "Links for {name}",
+      "advisorsBody": "Several National Taiwan University professors advise DOGTOR on AI, software, human–computer interaction and learning interaction. Individual names and titles will be published once consent is confirmed.",
+      "partnersBody": "We have partnered with the tutoring school Superb Education since 2023. Its teachers took part in designing DOGTOR, bringing years of frontline exam-prep experience into every feature.",
+      "advisorsLabel": "NTU faculty advisors",
+      "partnersLabel": "Superb Education (partner since 2023)"
+    },
+    "capabilities": {
+      "eyebrow": "CAPABILITIES",
+      "title": "What we can do.",
+      "items": {
+        "ai": {
+          "title": "AI & Educational Technology",
+          "body": "AI-assisted learning, learning data analysis and AI integration.",
+          "evidence": "Put into practice in DOGTOR: knowledge graphs and scores, AI question generation with multi-model checks, personalized review and parent analytics."
+        },
+        "product": {
+          "title": "Product Design & Development",
+          "body": "Cross-platform apps, web applications and end-to-end product design and development.",
+          "evidence": "Our team has shipped mobile apps, web platforms and business systems with Flutter, Swift, Next.js and FastAPI."
+        },
+        "hci": {
+          "title": "Human-Centered Innovation",
+          "body": "User research, HCI, interaction design and product validation.",
+          "evidence": "HCI research around DOGTOR explores how students learn with AI (in progress)."
+        }
+      }
+    },
+    "future": {
+      "eyebrow": "LOOKING AHEAD",
+      "title": "Where we're heading.",
+      "body": "We'll keep deepening DOGTOR and exploring how AI can better support learning and understanding — while bringing our human-centered product approach to more situations worth improving."
+    },
+    "missionVisionTitle": "Mission & Vision",
+    "facts": {
+      "eyebrow": "COMPANY AT A GLANCE",
+      "title": "Company facts",
+      "name": "Company name",
+      "nameEn": "English name",
+      "taxId": "Tax ID",
+      "location": "Location",
+      "locationValue": "Taipei, Taiwan",
+      "product": "Flagship product",
+      "productValue": "DOGTOR (AI learning app for secondary students, iOS / Android)",
+      "partner": "Partners",
+      "partnerValue": "Superb Education (since 2023); NTU faculty advisors",
+      "focus": "Focus",
+      "focusValue": "Education technology, AI applications, mobile and web products, HCI",
+      "email": "Email"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions"
+    }
+  },
+  "Insights": {
+    "hero": {
+      "eyebrow": "INSIGHTS",
+      "title": "Perspectives, notes and <hl>research explorations</hl>.",
+      "supporting": "What we're thinking about and learning in education technology, AI, HCI and product design. These are team perspectives and product notes, not peer-reviewed academic findings."
+    },
+    "categories": {
+      "education": "Education & Learning",
+      "ai": "AI & Technology",
+      "hci": "Human-Computer Interaction",
+      "product": "Product & Design",
+      "company": "Company Updates"
+    },
+    "filterLabel": "Filter articles by category",
+    "all": "All",
+    "empty": "No articles in this category yet.",
+    "emptyAll": "Articles are on their way.",
+    "published": "Published",
+    "author": "Author",
+    "category": "Category",
+    "related": "Keep reading",
+    "backToList": "Back to all articles",
+    "inProgress": "Research in progress",
+    "inProgressNotice": "The research described here is still in progress. This article shares our process and early observations, not proven conclusions.",
+    "fallbackNotice": "This article is not yet available in English. The original Traditional Chinese version is shown below.",
+    "breadcrumb": "Insights",
+    "count": "{count, plural, one {# article} other {# articles}}"
+  },
+  "Contact": {
+    "hero": {
+      "eyebrow": "CONTACT",
+      "title": "Let's create <hl>more possibilities</hl> together.",
+      "supporting": "Education partnerships, product collaborations, business enquiries or other ideas — we'd love to hear from you."
+    },
+    "form": {
+      "title": "Partnership enquiry",
+      "requiredNote": "Fields marked \"Required\" are needed.",
+      "required": "Required",
+      "optional": "Optional",
+      "name": "Name",
+      "namePlaceholder": "What should we call you?",
+      "email": "Email",
+      "emailPlaceholder": "name@example.com",
+      "organization": "Organization / Company",
+      "organizationPlaceholder": "School, company or organization",
+      "inquiryType": "Enquiry type",
+      "types": {
+        "education": "Education partnership",
+        "product": "Product / technology collaboration",
+        "media": "Media / event invitation",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Briefly describe your idea, needs or the collaboration you have in mind.",
+      "messageCounter": "{count} / {max} characters",
+      "consent": "I have read and agree to the <link>Privacy Policy</link>, and consent to SuperB using the information above to respond to this enquiry.",
+      "honeypot": "Leave this field empty",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "retry": "Try again",
+      "errorSummary": "{count, plural, one {# field needs} other {# fields need}} your attention:",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "nameTooLong": "Please keep your name under 80 characters.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "That email doesn't look quite right. Please check and try again.",
+        "organizationTooLong": "Please keep the organization name under 120 characters.",
+        "typeRequired": "Please choose an enquiry type.",
+        "messageRequired": "Please enter a message.",
+        "messageTooShort": "Please write at least 10 characters so we can understand your needs.",
+        "messageTooLong": "Please keep your message under 3,000 characters.",
+        "consentRequired": "Please agree to the Privacy Policy so we can reply to your enquiry."
+      },
+      "failure": {
+        "title": "Your message wasn't sent",
+        "server": "Something went wrong while sending. Everything you entered has been kept — please press \"Try again\" in a moment.",
+        "rateLimited": "Too many attempts in a short time. Please wait a few minutes and try again. Everything you entered has been kept.",
+        "network": "Your connection seems to have dropped. Everything you entered has been kept — please reconnect and try again.",
+        "alternative": "You can also email us directly at <email></email>."
+      },
+      "success": {
+        "title": "Your message has been sent!",
+        "body": "Thank you for reaching out. We'll reply as soon as we've reviewed your message.",
+        "again": "Send another message"
+      }
+    },
+    "aside": {
+      "title": "Other ways to reach us",
+      "email": "Official email",
+      "company": "Company",
+      "taxId": "Tax ID",
+      "dogtorTitle": "Need help with DOGTOR?",
+      "dogtorBody": "For DOGTOR subscriptions, sign-in, parent services and product support, the DOGTOR website is the fastest way to get help.",
+      "dogtorCta": "Visit DOGTOR website",
+      "address": "Address",
+      "phone": "Phone"
+    }
+  },
+  "Privacy": {
+    "eyebrow": "PRIVACY POLICY",
+    "title": "Privacy Policy",
+    "updated": "Last updated: {date}",
+    "reviewNotice": "This policy must be reviewed by the company and legal counsel before launch."
+  },
+  "NotFound": {
+    "eyebrow": "404 · NOT FOUND",
+    "title": "This page doesn't exist, or it has moved.",
+    "body": "The address may be mistyped, or the content may have been updated. You can keep exploring from here.",
+    "home": "Back to home",
+    "work": "See products & work",
+    "contact": "Contact us"
+  }
+}

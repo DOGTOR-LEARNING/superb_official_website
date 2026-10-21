@@ -1,0 +1,567 @@
+{
+  "Common": {
+    "skipToContent": "跳至主要內容",
+    "exploreDogtor": "探索 DOGTOR",
+    "opensInNewTab": "（另開新分頁）",
+    "breadcrumbLabel": "麵包屑導覽",
+    "home": "首頁",
+    "viewProject": "查看作品",
+    "readMore": "閱讀更多",
+    "pending": "待確認",
+    "pendingHint": "此資料尚未經公司核准，正式上線前需替換（僅開發模式顯示）",
+    "placeholderImage": "圖片待替換",
+    "loading": "載入中…",
+    "draft": "草稿",
+    "playVideo": "播放影片"
+  },
+  "Nav": {
+    "primary": "主要導覽",
+    "home": "首頁",
+    "work": "產品與作品",
+    "about": "關於我們",
+    "insights": "觀點與研究",
+    "contact": "聯絡我們",
+    "openMenu": "開啟選單",
+    "closeMenu": "關閉選單",
+    "menu": "選單",
+    "language": "語言",
+    "switchTo": "切換為英文",
+    "currentLanguage": "目前語言：繁體中文",
+    "logoLabel": "SuperB 首頁"
+  },
+  "Footer": {
+    "tagline": "讓科技不只解決問題，更創造改變。",
+    "explore": "探索",
+    "company": "公司資訊",
+    "connect": "聯繫",
+    "privacy": "隱私權政策",
+    "email": "聯絡信箱",
+    "taxId": "統一編號",
+    "social": "社群",
+    "dogtorNote": "DOGTOR 訂閱、登入及產品客服，請前往 DOGTOR 官網。",
+    "rights": "版權所有。",
+    "trademark": "DOGTOR 逗課為 SuperB 旗下產品。其他作品之權利歸屬依各作品頁標示。",
+    "address": "地址",
+    "phone": "電話"
+  },
+  "Meta": {
+    "siteName": "SuperB 超棒軟體科技",
+    "titleTemplate": "%s｜SuperB 超棒軟體科技",
+    "defaultTitle": "SuperB 超棒軟體科技｜以教育為起點的科技公司",
+    "defaultDescription": "超棒軟體科技（SuperB）以教育科技為核心，結合人工智慧、軟體工程與以人為本的設計，打造真正能融入生活、帶來正向影響的數位產品。旗艦產品為 DOGTOR 逗課。",
+    "work": {
+      "title": "產品與作品",
+      "description": "從 AI 學習應用 DOGTOR 到跨領域數位產品，探索 SuperB 團隊如何以科技在不同情境下創造價值。"
+    },
+    "dogtor": {
+      "title": "DOGTOR 逗課｜產品故事",
+      "description": "我們為什麼打造 DOGTOR？從真實的學習問題出發，SuperB 如何以 AI、學習設計與軟體工程，幫助國高中生找到真正需要加強的觀念。"
+    },
+    "about": {
+      "title": "關於我們",
+      "description": "認識超棒軟體科技（SuperB）：以教育為起點、以人為核心的科技公司。2023 年起與精湛教育合作，打造 AI 學習 App DOGTOR 逗課，了解我們的故事、團隊、原則與能力。"
+    },
+    "insights": {
+      "title": "觀點與研究",
+      "description": "SuperB 團隊關於教育科技、AI 輔助學習、人機互動與產品設計的觀點文章、產品紀錄、研究探索與公司消息。"
+    },
+    "contact": {
+      "title": "聯絡我們",
+      "description": "與超棒軟體科技（SuperB）聯繫：教育機構合作、產品與技術合作、媒體或活動邀請。官方信箱 hello@superb-tutor.com，公司位於臺北市中正區。"
+    },
+    "privacy": {
+      "title": "隱私權政策",
+      "description": "超棒軟體科技有限公司官方網站隱私權政策：我們收集哪些資料、使用目的、第三方服務、保存期限，以及你依個資法享有的權利。"
+    },
+    "notFound": {
+      "title": "找不到頁面"
+    },
+    "keywords": "超棒軟體科技,超棒軟體,SuperB,SuperB Software Technology,教育科技,EdTech,AI 學習,DOGTOR,逗課,國高中學習 App,人機互動,精湛教育"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "HUMAN-CENTERED TECHNOLOGY",
+      "title": "讓科技不只解決問題，<br></br>更<hl>創造改變</hl>。",
+      "supporting": "我們以教育為起點，結合人工智慧、設計與軟體工程，打造真正讓生活變得更好的數位產品。",
+      "primaryCta": "探索我們的產品",
+      "secondaryCta": "認識 SuperB",
+      "visualLabel": "由 SuperB Logo 延伸的幾何品牌圖形：圓角菱形與交錯的藍黃線條"
+    },
+    "dogtor": {
+      "eyebrow": "OUR FLAGSHIP PRODUCT",
+      "title": "讓每一次學習，<br></br>都更接近<hl>真正理解</hl>。",
+      "productName": "DOGTOR 逗課",
+      "description": "DOGTOR 是專為台灣國高中生打造的 AI 學習應用，結合知識點練習、弱點診斷、AI 解題與互動式學習體驗，幫助學生找到真正需要加強的觀念。",
+      "featuresLabel": "產品特色",
+      "features": {
+        "personalized": "AI 輔助個人化學習",
+        "tracking": "知識點練習與弱點追蹤",
+        "game": "遊戲化互動與好友對戰",
+        "parents": "家長學習進度與分析服務"
+      },
+      "primaryCta": "前往 DOGTOR 官網",
+      "secondaryCta": "了解產品故事",
+      "screensLabel": "DOGTOR App 畫面"
+    },
+    "beliefs": {
+      "eyebrow": "WHAT WE BELIEVE",
+      "title": "我們相信，好的科技應該<hl>從人出發</hl>。",
+      "items": {
+        "accessible": {
+          "label": "Make Learning Accessible",
+          "title": "讓好的教育更容易取得。",
+          "body": "我們希望透過軟體與 AI，降低優質學習資源的門檻，讓更多學生能以適合自己的方式成長。"
+        },
+        "people": {
+          "label": "Design for People",
+          "title": "理解需求，比追逐技術更重要。",
+          "body": "我們重視真實使用情境、使用者體驗，以及科技如何融入日常。"
+        },
+        "impact": {
+          "label": "Build for Impact",
+          "title": "讓好的想法真正落地。",
+          "body": "從發現問題、設計體驗到實際開發與持續改善，我們相信產品的價值來自真實使用。"
+        }
+      }
+    },
+    "work": {
+      "eyebrow": "BEYOND THE CLASSROOM",
+      "title": "從教育出發，<hl>探索更多可能</hl>。",
+      "supporting": "除了教育科技，我們也持續探索 AI 應用、數位平台與以人為本的產品設計。這些作品記錄了團隊成員將不同想法轉化為實際產品的經驗。",
+      "cta": "探索更多作品"
+    },
+    "build": {
+      "eyebrow": "FROM IDEAS TO IMPACT",
+      "title": "從真實問題，到<hl>真正被使用</hl>的產品。",
+      "steps": {
+        "discover": {
+          "label": "Discover",
+          "body": "理解使用者、情境與真正需要解決的問題。"
+        },
+        "design": {
+          "label": "Design",
+          "body": "規劃產品體驗、驗證想法、設計互動流程。"
+        },
+        "build": {
+          "label": "Build",
+          "body": "結合 AI、軟體工程與系統架構，打造可運作的產品。"
+        },
+        "learn": {
+          "label": "Learn & Improve",
+          "body": "從真實使用回饋與數據持續改進。"
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "MEET SUPERB",
+      "title": "一群相信科技<hl>可以帶來改變</hl>的人。",
+      "body": "我們結合教育現場經驗、軟體開發與產品設計的不同視角，持續尋找值得被解決的問題，並將想法轉化為有溫度、真正可使用的科技產品。",
+      "cta": "認識我們",
+      "storyLabel": "我們的歷程",
+      "teamLabel": "SuperB 核心成員"
+    },
+    "cta": {
+      "title": "一起，打造更好的可能。",
+      "body": "無論你來自教育現場、科技產業，或是擁有一個值得實現的想法，我們都期待與你交流。",
+      "button": "與我們聯繫"
+    }
+  },
+  "Story": {
+    "observe": {
+      "label": "2023",
+      "title": "與精湛教育合作",
+      "body": "我們開始與補教機構精湛教育合作，走進第一線教學現場，看見學生投入大量時間複習，卻不一定知道自己卡在哪裡。"
+    },
+    "solve": {
+      "label": "2024",
+      "title": "先解決身邊的問題",
+      "body": "從教學現場最常見的困擾開始，我們為精湛教育打造 LINE 行政助手 SuperBot，把上課提醒、打卡與時數統計自動化。"
+    },
+    "dogtor": {
+      "label": "2026.03",
+      "title": "DOGTOR 逗課上架",
+      "body": "由台大學生與精湛教育的補習班老師聯手開發、多位台大教授擔任顧問的 DOGTOR 正式上架，首月登上 App Store 教育類第 4 名。"
+    },
+    "explore": {
+      "label": "2026.10",
+      "title": "累積超過一萬位使用者",
+      "body": "DOGTOR 累積超過 10,000 位註冊使用者。我們持續與教育現場合作，探索 AI 如何更好地支持學習與理解。"
+    }
+  },
+  "Work": {
+    "hero": {
+      "eyebrow": "PRODUCTS & WORK",
+      "title": "好的產品，<hl>從理解問題開始</hl>。",
+      "supporting": "從 AI 學習應用到跨領域數位產品，我們探索科技如何在不同情境下創造價值。"
+    },
+    "featured": {
+      "eyebrow": "FLAGSHIP PRODUCT",
+      "type": "AI 學習應用｜iOS・Android",
+      "positioning": "專為台灣國高中生打造的 AI 學習應用。",
+      "problemLabel": "要解決的問題",
+      "problem": "傳統複習容易陷入大量刷題，學生卻不一定知道自己真正的觀念弱點。DOGTOR 從知識點出發，讓每一次練習都更有方向。",
+      "metricsLabel": "產品成果",
+      "screensLabel": "精選 App 畫面"
+    },
+    "selected": {
+      "eyebrow": "SELECTED WORK",
+      "title": "更多作品",
+      "supporting": "以下作品包含團隊成員過去或目前參與的專案。每張卡片都標示了作品的參與關係與開發狀態。",
+      "notice": "作品關係標示說明實際參與方式，不代表每個作品都屬於公司資產。"
+    },
+    "filter": {
+      "label": "依分類篩選作品",
+      "all": "全部",
+      "education": "教育",
+      "ai-apps": "AI 與應用",
+      "social-impact": "社會影響",
+      "business-systems": "商業系統",
+      "count": "{count, plural, =0 {沒有符合的作品} other {共 # 件作品}}",
+      "empty": "這個分類目前沒有可公開的作品。",
+      "emptyAction": "查看全部作品"
+    }
+  },
+  "Category": {
+    "education": "教育",
+    "ai-apps": "AI 與應用",
+    "social-impact": "社會影響",
+    "business-systems": "商業系統"
+  },
+  "Status": {
+    "live": "已上線",
+    "completed": "已完成",
+    "prototype": "Prototype 原型",
+    "in-progress": "In Progress 開發中",
+    "research": "Research Project 研究中",
+    "archived": "歷史作品"
+  },
+  "Relationship": {
+    "flagship-product": "Flagship Product 旗艦產品",
+    "team-member-project": "Team Member Project 團隊成員作品",
+    "team-capstone": "NTU Team Capstone 臺大團隊專題",
+    "team-led-project": "Team-Led Project 團隊主導作品",
+    "collaborative-project": "Collaborative Project 合作作品",
+    "selected-work": "Selected Work 精選作品",
+    "client-work": "Client Work 客戶專案"
+  },
+  "Project": {
+    "breadcrumbWork": "產品與作品",
+    "year": "年度",
+    "type": "類型",
+    "status": "狀態",
+    "relationship": "參與關係",
+    "challenge": "The Challenge",
+    "challengeTitle": "想解決的問題",
+    "approach": "Our Approach",
+    "approachTitle": "設計與開發方法",
+    "features": "Key Features",
+    "featuresTitle": "主要功能",
+    "showcase": "Product Showcase",
+    "showcaseTitle": "介面與使用流程",
+    "technology": "Technology & Design",
+    "technologyTitle": "技術與設計決策",
+    "stackLabel": "使用技術",
+    "involvement": "Our Involvement",
+    "involvementTitle": "實際參與的部分",
+    "outcomes": "Outcomes",
+    "outcomesTitle": "成果、限制與研究狀態",
+    "credits": "Credits & Attribution",
+    "creditsTitle": "合作團隊與授權標示",
+    "next": "Next Project",
+    "nextLabel": "下一個作品",
+    "prototypeNotice": "此作品為{status}，尚未正式商業化營運。內容呈現的是團隊的探索與實作過程。",
+    "externalLinks": "相關連結",
+    "outcomeKind": {
+      "outcome": "成果",
+      "limitation": "限制",
+      "status": "目前狀態"
+    },
+    "userFlowTitle": "使用流程",
+    "videoTitle": "Demo 影片"
+  },
+  "Dogtor": {
+    "breadcrumb": "DOGTOR 逗課",
+    "hero": {
+      "eyebrow": "FLAGSHIP PRODUCT · DOGTOR",
+      "title": "DOGTOR 逗課",
+      "subtitle": "讓每個學生找到<hl>適合自己的學習方式</hl>。",
+      "body": "DOGTOR 是由超棒軟體科技開發與營運的 AI 學習 App。這是它的產品故事：我們為什麼打造它、想改善什麼教育問題，以及接下來想探索什麼。"
+    },
+    "problem": {
+      "eyebrow": "THE PROBLEM",
+      "title": "努力複習，卻不知道自己卡在哪裡。",
+      "body": "傳統複習容易陷入大量刷題，卻不一定知道真正的觀念弱點。學生花了時間，卻難以把力氣用在最需要的地方；家長也很難理解孩子的學習狀況。",
+      "points": {
+        "volume": "練習量大，但缺乏方向",
+        "blind": "看得到分數，看不到觀念弱點",
+        "motivation": "重複練習容易失去動力"
+      }
+    },
+    "approach": {
+      "eyebrow": "OUR APPROACH",
+      "title": "從知識點出發，讓練習更有方向。",
+      "body": "我們以知識圖譜串起題目、知識分數與複習時機，再用 AI 與遊戲化設計，讓學生願意持續練習、看見下一步。",
+      "items": {
+        "knowledge": {
+          "title": "知識圖譜與知識分數",
+          "body": "把答題紀錄接到知識點，計算每個觀念的掌握程度，並依表現與上次練習時間安排個人化複習。"
+        },
+        "ai": {
+          "title": "AI 題庫與多模型檢查",
+          "body": "依課程、章節與知識點生成題目，再以多個模型交叉檢查，涵蓋幾乎所有台灣國高中科目與 SAT／AP 等國際課程。"
+        },
+        "personal": {
+          "title": "記得學生的 AI 學伴",
+          "body": "對話式 AI 會記住學生的困難、興趣與學習脈絡，依過去的表現調整回應與觀念提示。"
+        },
+        "play": {
+          "title": "遊戲化與好友互動",
+          "body": "學習島嶼、好友互動與即時對戰，讓複習成為想每天打開的日常習慣。"
+        }
+      }
+    },
+    "inAction": {
+      "eyebrow": "PRODUCT IN ACTION",
+      "title": "真實的產品畫面與使用流程",
+      "steps": {
+        "practice": "模擬測驗：作答後立即回饋，追蹤每個知識點的掌握程度",
+        "diagnose": "錯題分類：上傳題目自動對應知識點，建立個人錯題紀錄",
+        "ai": "AI 學伴：記得學生的弱點與學習脈絡，給出合適的提示",
+        "progress": "家長報告：每日學習成果直接送到家長的 LINE"
+      },
+      "videoTitle": "App 介紹影片",
+      "reportsTitle": "每日學習報告（真實畫面）"
+    },
+    "impact": {
+      "eyebrow": "IMPACT",
+      "title": "被學生真正使用，是我們最在意的成果。",
+      "body": "我們只公開經核實、標示日期的數據，並定期更新。"
+    },
+    "beyond": {
+      "eyebrow": "BEYOND FEATURES",
+      "title": "不只是功能，更是理解學習的方式。",
+      "body": "DOGTOR 的價值不只在功能本身。我們從真實學習行為理解使用者，團隊也正進行與 DOGTOR 相關的人機互動（HCI）研究，探索 AI 如何在幫助學生的同時，保留思考與理解的空間——研究仍在進行中，尚無正式結論。",
+      "cta": "閱讀我們的觀點"
+    },
+    "cta": {
+      "title": "想了解完整功能或下載 App？",
+      "body": "DOGTOR 的完整功能介紹、下載方式、訂閱與客服，都在 DOGTOR 官網。",
+      "button": "前往 DOGTOR 官網",
+      "appStore": "App Store 下載",
+      "googlePlay": "Google Play 下載"
+    }
+  },
+  "About": {
+    "hero": {
+      "eyebrow": "ABOUT SUPERB",
+      "title": "以教育為起點，<hl>以人為核心</hl>。",
+      "supporting": "我們相信科技的價值不只來自它能做什麼，更來自它能為誰帶來改變。"
+    },
+    "story": {
+      "eyebrow": "OUR STORY",
+      "title": "從一個教育現場的觀察開始。",
+      "body": "SuperB 的起點是補教現場。2023 年起，我們與精湛教育合作，走進第一線的教學現場；我們自己也是一路從台灣升學制度走過來的學生，如今身兼其他孩子的老師。我們看見許多學生不是不想學，而是傳統練習缺少即時互動與回饋，很難維持學習節奏，也不知道自己真正卡在哪裡。於是台大學生團隊與精湛教育的補習班老師聯手，在多位台大教授的指導下打造了 DOGTOR 逗課。在這個過程中，我們學會從真實使用者出發、從回饋中修正，並把同樣的方法帶到更多領域。"
+    },
+    "mission": {
+      "eyebrow": "MISSION",
+      "body": "以科技降低學習與數位服務的門檻，打造簡單、有效且以人為本的產品。"
+    },
+    "vision": {
+      "eyebrow": "VISION",
+      "body": "讓好的科技不只服務少數人，而能成為更多人探索、學習與成長的助力。"
+    },
+    "principles": {
+      "eyebrow": "OUR PRINCIPLES",
+      "title": "引導我們每一個決定的四項原則。",
+      "items": {
+        "purpose": {
+          "title": "Education with Purpose",
+          "body": "教育是我們的起點。我們打造的每個功能，都應該幫助學習真正發生。"
+        },
+        "human": {
+          "title": "Human-Centered Design",
+          "body": "從使用者的真實情境出發，讓科技配合人，而不是讓人配合科技。"
+        },
+        "engineering": {
+          "title": "Thoughtful Engineering",
+          "body": "穩定、可維護、值得信任的工程品質，是好體驗的基礎。"
+        },
+        "learning": {
+          "title": "Continuous Learning",
+          "body": "從數據與回饋中學習，持續修正產品，也持續成長為更好的團隊。"
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "OUR TEAM",
+      "title": "打造 SuperB 的人。",
+      "advisors": "顧問與合作夥伴",
+      "advisorsEmpty": "顧問與合作教授資訊將於取得同意後公開。",
+      "photoAlt": "{name} 的照片",
+      "links": "{name} 的個人連結",
+      "advisorsBody": "DOGTOR 由多位國立臺灣大學教授擔任顧問，在 AI、軟體、人機互動（HCI）與學習互動等方面提供專業指導。個別顧問的姓名與職稱將於取得同意後公開。",
+      "partnersBody": "我們自 2023 年起與補教機構精湛教育合作。精湛教育的補習班老師參與 DOGTOR 的產品設計，將多年備考輔導的第一線經驗帶進每一個功能。",
+      "advisorsLabel": "台大教授顧問群",
+      "partnersLabel": "精湛教育（2023 年起合作）"
+    },
+    "capabilities": {
+      "eyebrow": "CAPABILITIES",
+      "title": "我們能做的事。",
+      "items": {
+        "ai": {
+          "title": "AI & Educational Technology",
+          "body": "AI 輔助學習、學習數據分析、AI 應用整合。",
+          "evidence": "實踐於 DOGTOR：知識圖譜與知識分數、AI 題庫生成與多模型檢查、個人化複習與家長分析。"
+        },
+        "product": {
+          "title": "Product Design & Development",
+          "body": "跨平台 App、Web 應用、端到端產品設計與開發。",
+          "evidence": "團隊成員以 Flutter、Swift、Next.js 與 FastAPI 完成過行動 App、Web 平台與企業系統。"
+        },
+        "hci": {
+          "title": "Human-Centered Innovation",
+          "body": "使用者研究、HCI、互動設計與產品驗證。",
+          "evidence": "透過與 DOGTOR 相關的人機互動研究，理解人與 AI 之間的學習互動（研究進行中）。"
+        }
+      }
+    },
+    "future": {
+      "eyebrow": "LOOKING AHEAD",
+      "title": "我們正在探索的方向。",
+      "body": "我們會繼續深化 DOGTOR，探索 AI 如何更好地支持學習與理解；同時，我們也希望把以人為本的產品方法，帶到更多值得被改善的情境中。"
+    },
+    "missionVisionTitle": "使命與願景",
+    "facts": {
+      "eyebrow": "COMPANY AT A GLANCE",
+      "title": "公司簡介",
+      "name": "公司名稱",
+      "nameEn": "英文名稱",
+      "taxId": "統一編號",
+      "location": "所在地",
+      "locationValue": "臺灣臺北市",
+      "product": "核心產品",
+      "productValue": "DOGTOR 逗課（國高中生 AI 學習 App，iOS／Android）",
+      "partner": "合作夥伴",
+      "partnerValue": "精湛教育（2023 年起）、國立臺灣大學教授顧問群",
+      "focus": "專業領域",
+      "focusValue": "教育科技、AI 應用、行動與 Web 產品開發、人機互動",
+      "email": "聯絡信箱"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "常見問題"
+    }
+  },
+  "Insights": {
+    "hero": {
+      "eyebrow": "INSIGHTS",
+      "title": "觀點、紀錄與<hl>研究探索</hl>。",
+      "supporting": "關於教育科技、AI、人機互動與產品設計，我們正在思考與學習的事。內容為團隊觀點與產品紀錄，並非經同儕審查的學術結論。"
+    },
+    "categories": {
+      "education": "Education & Learning",
+      "ai": "AI & Technology",
+      "hci": "Human-Computer Interaction",
+      "product": "Product & Design",
+      "company": "Company Updates"
+    },
+    "filterLabel": "依分類篩選文章",
+    "all": "全部",
+    "empty": "這個分類目前還沒有文章。",
+    "emptyAll": "文章正在準備中，敬請期待。",
+    "published": "發布日期",
+    "author": "作者",
+    "category": "分類",
+    "related": "延伸閱讀",
+    "backToList": "回到所有文章",
+    "inProgress": "研究進行中",
+    "inProgressNotice": "本文描述的研究仍在進行中，內容為探索過程與初步觀察，不代表已證實的結論。",
+    "fallbackNotice": "本文目前尚無繁體中文版本，以下顯示英文原文。",
+    "breadcrumb": "觀點與研究",
+    "count": "{count, plural, other {共 # 篇文章}}"
+  },
+  "Contact": {
+    "hero": {
+      "eyebrow": "CONTACT",
+      "title": "讓我們一起<hl>創造更多可能</hl>。",
+      "supporting": "教育科技合作、產品交流、企業合作或其他提案，都歡迎與我們聯繫。"
+    },
+    "form": {
+      "title": "合作洽詢",
+      "requiredNote": "標示「必填」的欄位為必要資訊。",
+      "required": "必填",
+      "optional": "選填",
+      "name": "姓名／稱呼",
+      "namePlaceholder": "怎麼稱呼你？",
+      "email": "Email",
+      "emailPlaceholder": "name@example.com",
+      "organization": "單位／公司",
+      "organizationPlaceholder": "學校、公司或組織名稱",
+      "inquiryType": "洽詢類型",
+      "types": {
+        "education": "教育機構合作",
+        "product": "產品／技術合作",
+        "media": "媒體／活動邀請",
+        "other": "其他"
+      },
+      "message": "訊息內容",
+      "messagePlaceholder": "請簡單描述你的想法、需求或合作方向。",
+      "messageCounter": "{count} / {max} 字",
+      "consent": "我已閱讀並同意<link>隱私權政策</link>，同意 SuperB 使用上述資料回覆此次洽詢。",
+      "honeypot": "請勿填寫此欄位",
+      "submit": "送出訊息",
+      "submitting": "送出中…",
+      "retry": "重新送出",
+      "errorSummary": "表單有 {count} 個欄位需要修正：",
+      "errors": {
+        "nameRequired": "請填寫姓名或稱呼。",
+        "nameTooLong": "姓名請在 80 字以內。",
+        "emailRequired": "請填寫 Email。",
+        "emailInvalid": "Email 格式似乎不正確，請確認後再試一次。",
+        "organizationTooLong": "單位名稱請在 120 字以內。",
+        "typeRequired": "請選擇洽詢類型。",
+        "messageRequired": "請填寫訊息內容。",
+        "messageTooShort": "訊息內容請至少 10 個字，讓我們更了解你的需求。",
+        "messageTooLong": "訊息內容請在 3000 字以內。",
+        "consentRequired": "請勾選同意隱私權政策，我們才能回覆你的洽詢。"
+      },
+      "failure": {
+        "title": "訊息沒有成功送出",
+        "server": "傳送時發生問題。你填寫的內容都已保留，請稍後再按一次「重新送出」。",
+        "rateLimited": "短時間內送出次數過多，請稍候幾分鐘再試。你填寫的內容都已保留。",
+        "network": "網路連線似乎中斷了。你填寫的內容都已保留，請確認連線後重新送出。",
+        "alternative": "也可以直接寄信至 <email></email>。"
+      },
+      "success": {
+        "title": "訊息已成功送出！",
+        "body": "感謝你的來信，我們會在確認內容後儘快回覆。",
+        "again": "再寄一則訊息"
+      }
+    },
+    "aside": {
+      "title": "其他聯絡方式",
+      "email": "官方信箱",
+      "company": "公司名稱",
+      "taxId": "統一編號",
+      "dogtorTitle": "DOGTOR 使用問題？",
+      "dogtorBody": "DOGTOR 的訂閱、登入、家長服務與產品客服，請前往 DOGTOR 官網，能更快獲得協助。",
+      "dogtorCta": "前往 DOGTOR 官網",
+      "address": "公司地址",
+      "phone": "聯絡電話"
+    }
+  },
+  "Privacy": {
+    "eyebrow": "PRIVACY POLICY",
+    "title": "隱私權政策",
+    "updated": "最後更新：{date}",
+    "reviewNotice": "本政策內容需經公司與法務審閱後才能正式上線。"
+  },
+  "NotFound": {
+    "eyebrow": "404 · NOT FOUND",
+    "title": "這個頁面不存在，或已經移動了。",
+    "body": "可能是網址輸入有誤，或內容已經更新。你可以從以下頁面繼續探索。",
+    "home": "回到首頁",
+    "work": "看看產品與作品",
+    "contact": "聯絡我們"
+  }
+}
