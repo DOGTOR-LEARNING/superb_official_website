@@ -1,15 +1,21 @@
 import { cn } from "@/lib/cn";
+import { LOGO_COLORS, MARK_BOX, logoPaths } from "./logo-paths";
+
+// 原始向量中：上方黃線分成兩側，中間黃線連續，下方黃線分成兩側。
+const goldContours = logoPaths.gold.split(/(?=M )/).filter(Boolean);
+const backBranches = [goldContours[0], goldContours[1], goldContours[3], goldContours[4]].join(" ");
+const frontBranch = goldContours[2];
+const markTransform = `translate(280 52) scale(0.56) translate(${-(MARK_BOX.x + MARK_BOX.w / 2)} ${-MARK_BOX.y})`;
 
 /**
- * Hero 品牌視覺：由 SuperB Logo 延伸的抽象構圖（spec §4.1、§11.7）——
- * 圓角菱形、向上生長的樹幹、黃色枝葉 V 形線條，搭配柔和圓角模組與連結線。
- * 線條沿菱形輪廓描繪、枝葉依序出現，最終形成穩定構圖；只播放一次。
- * 以 CSS 實作，不需 JS；reduced motion 時直接顯示完成狀態。這是延伸圖形，不是正式 Logo 本身。
+ * 使用正式 Logo 向量輪廓，以遮罩沿菱形、樹幹與枝葉描繪，保留原圖粗細及分布。
+ * 上下黃線在藍色後方，中間黃線在最上層；只播放一次。
+ * 周邊模組與連結線為裝飾；reduced motion 時直接顯示完成狀態。
  */
 export function AnimatedLogoGraphic({ className, label }: { className?: string; label: string }) {
   const delay = (ms: number) => ({ animationDelay: `${ms}ms` });
-  const BLUE = "#2868A6";
-  const GOLD = "#F3B338";
+  const BLUE = LOGO_COLORS.blue;
+  const GOLD = LOGO_COLORS.gold;
 
   return (
     <svg viewBox="0 0 560 540" className={cn("h-auto w-full", className)} role="img" aria-label={label}>
@@ -25,6 +31,23 @@ export function AnimatedLogoGraphic({ className, label }: { className?: string; 
         <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="160%">
           <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="#163247" floodOpacity="0.07" />
         </filter>
+        {/* 描繪線僅控制顯示範圍；實際輪廓與粗細完全使用正式向量。 */}
+        <mask id="hero-blue-reveal" maskUnits="userSpaceOnUse" x="400" y="200" width="650" height="820">
+          <g fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M731.5 246 L1013.5 528 L731.5 810 L449.5 528 Z" pathLength={1} className="draw" style={delay(380)} />
+            <path d="M731.5 360 V973" pathLength={1} className="draw" style={delay(560)} />
+            <path d="M634 972 H829" pathLength={1} className="draw" style={delay(1100)} />
+          </g>
+        </mask>
+        <mask id="hero-back-branches-reveal" maskUnits="userSpaceOnUse" x="520" y="370" width="420" height="370">
+          <g fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M678 414 L731.5 468 L786 414" pathLength={1} className="draw" style={delay(660)} />
+            <path d="M560 531 L731.5 702 L903 531" pathLength={1} className="draw" style={delay(900)} />
+          </g>
+        </mask>
+        <mask id="hero-front-branch-reveal" maskUnits="userSpaceOnUse" x="580" y="430" width="300" height="190">
+          <path d="M619 472 L731.5 582 L844 472" fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round" pathLength={1} className="draw" style={delay(780)} />
+        </mask>
       </defs>
 
       {/* 局部金黃光暈 */}
@@ -33,21 +56,13 @@ export function AnimatedLogoGraphic({ className, label }: { className?: string; 
       {/* 外圈淡菱形 */}
       <rect x="90" y="50" width="380" height="380" rx="70" transform="rotate(45 280 240)" fill="none" stroke={BLUE} strokeOpacity="0.14" strokeWidth="2" pathLength={1} className="draw" style={delay(300)} />
 
-      {/* 主菱形 */}
-      <rect x="150" y="110" width="260" height="260" rx="44" transform="rotate(45 280 240)" fill="url(#hero-fill)" className="pop-in" style={delay(300)} />
-      <rect x="150" y="110" width="260" height="260" rx="44" transform="rotate(45 280 240)" fill="none" stroke={BLUE} strokeWidth="9" pathLength={1} className="draw" style={delay(380)} />
-
-      {/* 枝葉：黃色 V 形依序出現 */}
-      <g fill="none" stroke={GOLD} strokeWidth="10" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M200 236 L280 316 L360 236" pathLength={1} className="draw" style={delay(900)} />
-        <path d="M222 196 L280 254 L338 196" pathLength={1} className="draw" style={delay(780)} />
-        <path d="M248 160 L280 192 L312 160" pathLength={1} className="draw" style={delay(660)} />
-      </g>
-
-      {/* 樹幹與底座 */}
-      <g fill="none" stroke={BLUE} strokeWidth="10" strokeLinecap="round">
-        <path d="M280 130 L280 470" pathLength={1} className="draw" style={delay(560)} />
-        <path d="M236 472 L324 472" pathLength={1} className="draw" style={delay(1100)} />
+      <g transform={markTransform}>
+        <path d="M731.5 246 L1013.5 528 L731.5 810 L449.5 528 Z" fill="url(#hero-fill)" className="pop-in" style={delay(300)} />
+        {/* 上下黃線先繪製，藍色菱形與樹幹覆蓋交會處。 */}
+        <path d={backBranches} fill={GOLD} mask="url(#hero-back-branches-reveal)" />
+        <path d={logoPaths.blueMark} fill={BLUE} fillRule="evenodd" mask="url(#hero-blue-reveal)" />
+        {/* 中間黃線最後繪製，保留原圖跨過藍色樹幹的 V 形。 */}
+        <path d={frontBranch} fill={GOLD} mask="url(#hero-front-branch-reveal)" />
       </g>
 
       {/* 連結線：從菱形延伸到兩側模組，象徵合作與連結 */}
