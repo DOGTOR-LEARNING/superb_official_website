@@ -69,7 +69,11 @@ export function AnimatedLogoGraphic({ className, label }: { className?: string; 
         <path d="M731.5 246 L1013.5 528 L731.5 810 L449.5 528 Z" fill="url(#hero-fill)" className="pop-in" style={delay(1200)} />
         {/* 上下黃線先繪製，藍色菱形與樹幹覆蓋交會處。 */}
         <path d={backBranches} fill={GOLD} mask="url(#hero-back-branches-reveal)" />
-        <path d={logoPaths.blueMark} fill={BLUE} fillRule="evenodd" mask="url(#hero-blue-reveal)" />
+        <g fill={BLUE} mask="url(#hero-blue-reveal)">
+          {/* 補滿原始輪廓為黃色書頁預留的缺口，讓主幹先連續長成。 */}
+          <rect x="713.25" y="360" width="36.5" height="613" />
+          <path d={logoPaths.blueMark} fillRule="evenodd" />
+        </g>
         {/* 中間黃線最後繪製，保留原圖跨過藍色樹幹的 V 形。 */}
         <path d={frontBranch} fill={GOLD} mask="url(#hero-front-branch-reveal)" />
       </g>
