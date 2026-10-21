@@ -224,6 +224,19 @@
     stroke-dashoffset: 0;
   }
 }
+@keyframes logo-grow {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 1;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
 @keyframes drift {
   0% {
     transform: translate3d(0, 0, 0) scale(1);
@@ -246,6 +259,11 @@
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   animation: draw-line var(--duration-hero) var(--ease-hero) forwards;
+}
+@utility logo-grow {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: logo-grow var(--duration-hero) var(--ease-hero) both;
 }
 @utility pop-in {
   animation: fade-in 500ms var(--ease-out-soft) both;
@@ -273,9 +291,11 @@
   .page-enter {
     animation: fade-in 200ms linear both !important;
   }
-  .draw {
+  .draw,
+  .logo-grow {
     animation: none !important;
     stroke-dashoffset: 0 !important;
+    opacity: 1 !important;
   }
   .drift-slow {
     animation: none !important;

@@ -8,12 +8,14 @@ const frontBranch = goldContours[2];
 const markTransform = `translate(280 52) scale(0.56) translate(${-(MARK_BOX.x + MARK_BOX.w / 2)} ${-MARK_BOX.y})`;
 
 /**
- * 使用正式 Logo 向量輪廓，以遮罩沿菱形、樹幹與枝葉描繪，保留原圖粗細及分布。
+ * 使用正式 Logo 向量輪廓：藍色由下向上生長，黃色書頁從中央向兩側展開。
+ * 底座 → 樹幹與外框 → 下、中、上層枝葉，呈現樹木茁壯與書頁融合的意象。
  * 上下黃線在藍色後方，中間黃線在最上層；只播放一次。
  * 周邊模組與連結線為裝飾；reduced motion 時直接顯示完成狀態。
  */
 export function AnimatedLogoGraphic({ className, label }: { className?: string; label: string }) {
   const delay = (ms: number) => ({ animationDelay: `${ms}ms` });
+  const growth = (start: number, duration: number) => ({ animationDelay: `${start}ms`, animationDuration: `${duration}ms` });
   const BLUE = LOGO_COLORS.blue;
   const GOLD = LOGO_COLORS.gold;
 
@@ -34,30 +36,37 @@ export function AnimatedLogoGraphic({ className, label }: { className?: string; 
         {/* 描繪線僅控制顯示範圍；實際輪廓與粗細完全使用正式向量。 */}
         <mask id="hero-blue-reveal" maskUnits="userSpaceOnUse" x="400" y="200" width="650" height="820">
           <g fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M731.5 246 L1013.5 528 L731.5 810 L449.5 528 Z" pathLength={1} className="draw" style={delay(380)} />
-            <path d="M731.5 360 V973" pathLength={1} className="draw" style={delay(560)} />
-            <path d="M634 972 H829" pathLength={1} className="draw" style={delay(1100)} />
+            <path d="M731.5 972 H634" pathLength={1} className="logo-grow" style={growth(180, 300)} />
+            <path d="M731.5 972 H829" pathLength={1} className="logo-grow" style={growth(180, 300)} />
+            <path d="M731.5 973 V360" pathLength={1} className="logo-grow" style={growth(400, 900)} />
+            <path d="M731.5 810 L449.5 528 L731.5 246" pathLength={1} className="logo-grow" style={growth(850, 900)} />
+            <path d="M731.5 810 L1013.5 528 L731.5 246" pathLength={1} className="logo-grow" style={growth(850, 900)} />
           </g>
         </mask>
         <mask id="hero-back-branches-reveal" maskUnits="userSpaceOnUse" x="520" y="370" width="420" height="370">
           <g fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M678 414 L731.5 468 L786 414" pathLength={1} className="draw" style={delay(660)} />
-            <path d="M560 531 L731.5 702 L903 531" pathLength={1} className="draw" style={delay(900)} />
+            <path d="M731.5 702 L560 531" pathLength={1} className="logo-grow" style={growth(1850, 600)} />
+            <path d="M731.5 702 L903 531" pathLength={1} className="logo-grow" style={growth(1850, 600)} />
+            <path d="M731.5 468 L678 414" pathLength={1} className="logo-grow" style={growth(2250, 550)} />
+            <path d="M731.5 468 L786 414" pathLength={1} className="logo-grow" style={growth(2250, 550)} />
           </g>
         </mask>
         <mask id="hero-front-branch-reveal" maskUnits="userSpaceOnUse" x="580" y="430" width="300" height="190">
-          <path d="M619 472 L731.5 582 L844 472" fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round" pathLength={1} className="draw" style={delay(780)} />
+          <g fill="none" stroke="white" strokeWidth="64" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M731.5 582 L619 472" pathLength={1} className="logo-grow" style={growth(2050, 600)} />
+            <path d="M731.5 582 L844 472" pathLength={1} className="logo-grow" style={growth(2050, 600)} />
+          </g>
         </mask>
       </defs>
 
       {/* 局部金黃光暈 */}
-      <circle cx="300" cy="200" r="190" fill="url(#hero-glow)" className="pop-in" style={delay(250)} />
+      <circle cx="300" cy="200" r="190" fill="url(#hero-glow)" className="pop-in" style={delay(1700)} />
 
       {/* 外圈淡菱形 */}
-      <rect x="90" y="50" width="380" height="380" rx="70" transform="rotate(45 280 240)" fill="none" stroke={BLUE} strokeOpacity="0.14" strokeWidth="2" pathLength={1} className="draw" style={delay(300)} />
+      <rect x="90" y="50" width="380" height="380" rx="70" transform="rotate(45 280 240)" fill="none" stroke={BLUE} strokeOpacity="0.14" strokeWidth="2" pathLength={1} className="draw" style={growth(2300, 800)} />
 
       <g transform={markTransform}>
-        <path d="M731.5 246 L1013.5 528 L731.5 810 L449.5 528 Z" fill="url(#hero-fill)" className="pop-in" style={delay(300)} />
+        <path d="M731.5 246 L1013.5 528 L731.5 810 L449.5 528 Z" fill="url(#hero-fill)" className="pop-in" style={delay(1200)} />
         {/* 上下黃線先繪製，藍色菱形與樹幹覆蓋交會處。 */}
         <path d={backBranches} fill={GOLD} mask="url(#hero-back-branches-reveal)" />
         <path d={logoPaths.blueMark} fill={BLUE} fillRule="evenodd" mask="url(#hero-blue-reveal)" />
@@ -66,14 +75,14 @@ export function AnimatedLogoGraphic({ className, label }: { className?: string; 
       </g>
 
       {/* 連結線：從菱形延伸到兩側模組，象徵合作與連結 */}
-      <g fill="none" stroke={BLUE} strokeOpacity="0.35" strokeWidth="2" strokeDasharray="4 6" className="pop-in" style={delay(1250)}>
+      <g fill="none" stroke={BLUE} strokeOpacity="0.35" strokeWidth="2" strokeDasharray="4 6" className="pop-in" style={delay(2700)}>
         <path d="M120 240 L120 190" />
         <path d="M440 300 L440 352" />
       </g>
 
       {/* 柔和圓角模組 */}
       <g filter="url(#soft-shadow)">
-        <g className="pop-in" style={delay(1300)}>
+        <g className="pop-in" style={delay(2850)}>
           <rect x="34" y="104" width="160" height="88" rx="20" fill="#FFFFFF" stroke="#DEE8F0" />
           <rect x="54" y="126" width="28" height="28" rx="8" fill="#EAF4FB" />
           <rect x="92" y="130" width="80" height="8" rx="4" fill="#DEE8F0" />
@@ -81,7 +90,7 @@ export function AnimatedLogoGraphic({ className, label }: { className?: string; 
           <rect x="54" y="168" width="118" height="6" rx="3" fill="#EAF4FB" />
           <rect x="54" y="168" width="76" height="6" rx="3" fill={BLUE} />
         </g>
-        <g className="pop-in" style={delay(1420)}>
+        <g className="pop-in" style={delay(2970)}>
           <rect x="372" y="352" width="150" height="92" rx="20" fill="#FFFFFF" stroke="#DEE8F0" />
           <circle cx="406" cy="386" r="14" fill="#FFF4D8" />
           <path d="M399 386 l5 5 l9 -10" stroke="#B9800F" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
