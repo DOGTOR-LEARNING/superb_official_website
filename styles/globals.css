@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+/* ───────────────────────────────────────────────
+   SuperB Design Tokens（spec §10）
+   品牌藍與品牌黃取自正式 Logo（public/brand/superb-logo.svg），其餘為 spec 建議 tokens。
+   ─────────────────────────────────────────────── */
+@theme {
+  /* Breakpoints — spec §10.4：Mobile 480 / Tablet 768 / Desktop 1200 */
+  --breakpoint-sm: 30rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-nav: 64rem;
+  --breakpoint-lg: 75rem;
+  --breakpoint-xl: 80rem;
+
+  /* Color */
+  --color-brand: #2868a6; /* Logo 取色 */
+  --color-brand-hover: #1f5488;
+  --color-gold: #f3b338; /* Logo 取色 */
+  --color-navy: #163247;
+  --color-muted: #526879;
+  --color-page: #f8fafc;
+  --color-surface: #ffffff;
+  --color-soft-blue: #eaf4fb;
+  --color-soft-gold: #fff4d8;
+  --color-line: #dee8f0;
+  --color-danger: #b42318;
+  --color-danger-soft: #fef3f2;
+  --color-success: #1f7a4d;
+  --color-success-soft: #ecf8f1;
+  /* DOGTOR 子品牌色：僅限產品內容區使用（spec §6.3） */
+  --color-dogtor: #ffcf3f;
+  --color-dogtor-soft: #fff7d6;
+  --color-dogtor-ink: #5a4300;
+
+  /* Typography */
+  --font-sans: var(--font-inter), var(--font-noto-tc), "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+
+  /* Radius — spec §10.5 */
+  --radius-button: 12px;
+  --radius-card-sm: 16px;
+  --radius-card: 24px;
+  --radius-feature: 32px;
+
+  /* Shadows — 柔和、不顯眼 */
+  --shadow-card: 0 1px 2px rgb(22 50 71 / 0.04), 0 4px 16px rgb(22 50 71 / 0.04);
+  --shadow-card-hover: 0 2px 4px rgb(22 50 71 / 0.05), 0 12px 32px rgb(22 50 71 / 0.08);
+
+  /* Motion tokens — spec §11.1 */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-hero: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-button: 160ms;
+  --duration-card: 220ms;
+  --duration-reveal: 450ms;
+  --duration-page: 260ms;
+  --duration-menu: 260ms;
+  --duration-hero: 1200ms;
+}
+
+/* ─── Base ─── */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    background-color: var(--color-page);
+    color: var(--color-navy);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.75;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-navy);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-soft-gold);
+    color: var(--color-navy);
+  }
+
+  /* 清晰的鍵盤 focus indicator（spec §11.5、§14） */
+  :focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+/* ─── Type scale — spec §10.3 ─── */
+@utility text-h1 {
+  font-size: clamp(2rem, 1.45rem + 2.2vw, 3.375rem);
+  line-height: 1.22;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+@utility text-h2 {
+  font-size: clamp(1.625rem, 1.35rem + 1vw, 2.25rem);
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+@utility text-h3 {
+  font-size: clamp(1.1875rem, 1.1rem + 0.3vw, 1.4375rem);
+  line-height: 1.4;
+  font-weight: 650;
+}
+@utility text-body-lg {
+  font-size: clamp(1.0625rem, 1.02rem + 0.15vw, 1.125rem);
+  line-height: 1.8;
+}
+@utility text-caption {
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+@utility text-eyebrow {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ─── Layout — spec §10.4 ─── */
+@utility container-site {
+  width: 100%;
+  max-width: 1232px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  @media (min-width: 30rem) {
+    padding-inline: 2rem;
+  }
+  @media (min-width: 48rem) {
+    padding-inline: 3rem;
+  }
+  @media (min-width: 75rem) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility section-y {
+  padding-block: 4.5rem;
+  @media (min-width: 48rem) {
+    padding-block: 6.5rem;
+  }
+  @media (min-width: 75rem) {
+    padding-block: 8.5rem;
+  }
+}
+
+/* 4 / 8 / 12 欄網格 */
+@utility grid-site {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1.25rem;
+  @media (min-width: 48rem) {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+  @media (min-width: 75rem) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+}
+
+/*
+ * 圓角卡片的細框線：以 ::after 疊在內容之上繪製。
+ * 卡片內的圖片或色塊被 overflow:hidden 裁切時，邊緣抗鋸齒會蓋住一般 border，
+ * 讓圓角處的線條變淡、看起來像被吃掉；疊加層可確保線條完整。
+ * 顏色以 --edge-color 調整（預設為 Border token）。
+ */
+@utility edge {
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    border-radius: inherit;
+    border: 1px solid var(--edge-color, var(--color-line));
+    pointer-events: none;
+  }
+}
+
+/* ─── Hero 進場動畫（CSS，不依賴 JS，避免主要資訊被隱藏過久） ─── */
+@keyframes rise-in {
+  from {
+    /* 非 0 的起始透明度：讓標題仍可被計為 LCP 元素 */
+    opacity: 0.08;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-18px, 12px, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@utility hero-fade {
+  animation: fade-in 450ms var(--ease-out-soft) both;
+}
+@utility hero-rise {
+  animation: rise-in 520ms var(--ease-out-soft) both;
+}
+@utility draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-line var(--duration-hero) var(--ease-hero) forwards;
+}
+@utility pop-in {
+  animation: fade-in 500ms var(--ease-out-soft) both;
+}
+/* 極緩慢、有限次數的局部裝飾位移（非永久循環） */
+@utility drift-slow {
+  animation: drift 26s ease-in-out 2;
+}
+
+@utility page-enter {
+  animation: fade-in var(--duration-page) ease-in-out both;
+}
+
+/* ─── Reduced motion — spec §11.9 ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+  .hero-rise,
+  .hero-fade,
+  .pop-in,
+  .page-enter {
+    animation: fade-in 200ms linear both !important;
+  }
+  .draw {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+  .drift-slow {
+    animation: none !important;
+  }
+}
