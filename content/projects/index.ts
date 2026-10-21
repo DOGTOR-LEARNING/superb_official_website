@@ -7,7 +7,7 @@ import { twoHundredOk } from "./200ok";
 import { aiPlanner } from "./aiplanner";
 import { zhongxingErp } from "./zhongxing-erp";
 
-const allProjects: Project[] = [superbot, /* mapit, */ sevenPeach, twoHundredOk, aiPlanner, zhongxingErp];
+const allProjects: Project[] = [superbot, zhongxingErp, /* mapit, */ sevenPeach, twoHundredOk, aiPlanner];
 
 /** 可公開的作品（排除 withheld），順序即作品頁的顯示順序 */
 export const projects = allProjects.filter((p) => p.publicationApproval.status !== "withheld");

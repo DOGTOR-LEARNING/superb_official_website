@@ -12,7 +12,7 @@ export const twoHundredOk: Project = {
     status: "pending",
     notes: ["確認團隊（Group 18）其他成員的署名與公開同意", "確認是否為課程專題"],
   },
-  homeOrder: 3,
+  homeOrder: 4,
   images: {
     cover: projectImage("/projects/200ok/cover.webp", 1600, 1165, {
       "zh-TW": "200OK 首頁：歡迎來到 200 OK，專為軟體工程設計的接案平台",

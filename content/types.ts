@@ -66,6 +66,13 @@ export interface ProjectLocaleContent {
   credits: { name: string; role: string }[];
   /** 使用流程（Product Showcase 中依序呈現） */
   userFlow?: string[];
+  /** 從實際案例延伸的應用方向，與已完成的功能分開說明。 */
+  relatedApplications?: {
+    title: string;
+    description: string;
+    items: { title: string; description: string }[];
+    link: { label: string; href: string };
+  };
 }
 
 /** Demo 影片（YouTube，點擊後才載入，使用 youtube-nocookie） */

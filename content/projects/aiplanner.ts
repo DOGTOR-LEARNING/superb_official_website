@@ -19,7 +19,7 @@ export const aiPlanner: Project = {
     status: "pending",
     notes: ["作品集標示為「已完成」，請確認是否曾上架 App Store；若有，狀態可改為 completed", "確認截圖對應的畫面說明"],
   },
-  homeOrder: 4,
+  homeOrder: 5,
   images: {
     cover: projectImage("/projects/aiplanner/cover.webp", 1600, 900, {
       "zh-TW": "aiPlanner：Your Smart Daily Planner，iOS 智慧行程助理",

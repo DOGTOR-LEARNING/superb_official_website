@@ -229,6 +229,21 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/work/
           </CaseBlock>
         ) : null}
 
+        {c.relatedApplications ? (
+          <CaseBlock id="related-applications" label="BEYOND THIS CASE" title={c.relatedApplications.title}>
+            <p className="text-body-lg text-navy/85">{c.relatedApplications.description}</p>
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+              {c.relatedApplications.items.map((item) => (
+                <li key={item.title} className="rounded-[var(--radius-card-sm)] border border-line bg-soft-blue/60 p-6">
+                  <h3 className="text-[1.125rem] font-semibold">{item.title}</h3>
+                  <p className="mt-2 text-muted">{item.description}</p>
+                </li>
+              ))}
+            </ul>
+            <TextLink href={c.relatedApplications.link.href} className="mt-6">{c.relatedApplications.link.label}</TextLink>
+          </CaseBlock>
+        ) : null}
+
         {/* 6. Technology & Design */}
         <CaseBlock id="technology" label={t("technology")} title={t("technologyTitle")}>
           <ul className="space-y-3">

@@ -12,7 +12,7 @@ export const sevenPeach: Project = {
     status: "pending",
     notes: ["作品集標示為「已完成」，請確認是否曾公開上架；若有，狀態可改為 completed", "確認其他團隊成員署名"],
   },
-  homeOrder: 2,
+  homeOrder: 3,
   images: {
     cover: projectImage("/projects/seven-peach/cover.webp", 1600, 900, {
       "zh-TW": "七桃：一款專為退休人士設計的休閒交友 App——輕鬆交友，樂活逍遙",
