@@ -46,7 +46,7 @@ export const MARK_BOX = ${JSON.stringify(MARK)} as const;
 export const ZH_BOX = { x: 356, y: 1055, w: 755, h: 153 } as const;
 export const EN_BOX = { x: 356, y: 1236, w: 755, h: 56 } as const;
 
-/** 橫式組合的英文名稱（Montserrat 全大寫），由 scripts/build-logo-english.py 產生 */
+/** 橫式組合的英文名稱（Montserrat，SuperB Software），由 scripts/build-logo-english.py 產生 */
 export const EN_CAPS_BOX = ${JSON.stringify(p.enCapsBox)} as const;
 export const TEXT_BLOCK_H = ${p.blockH};
 export const ZH_SCALE = ${ZH_SCALE};

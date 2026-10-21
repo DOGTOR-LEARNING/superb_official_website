@@ -3,7 +3,7 @@ import { EN_CAPS_BOX, LOGO_COLORS, MARK_BOX, TEXT_BLOCK_H, ZH_BOX, ZH_SCALE, log
 
 /**
  * SuperB 正式 Logo（由 public/brand/superb_logo.png 向量化）。
- * 保留原始字形與標誌；中文縮小、英文放大，名稱使用 SUPERB SOFTWARE。
+ * 保留原始字形與標誌；中文縮小、英文收斂至接近中文寬度，名稱使用 SuperB Software。
  * 規範：標誌與文字區塊等高；中文名稱下方一律搭配英文名稱。
  */
 
@@ -42,7 +42,7 @@ export function BrandMark({ className, title, tone = "color" }: { className?: st
   );
 }
 
-/** 文字區塊：上方較小中文、下方放大的英文名稱，底部對齊標誌底座 */
+/** 文字區塊：上方中文、下方較小的英文名稱，底部對齊標誌底座 */
 const TEXT_TOP = ZH_BOX.y;
 const TEXT_W = EN_CAPS_BOX.w;
 /** 標誌縮放到與文字區塊等高 */

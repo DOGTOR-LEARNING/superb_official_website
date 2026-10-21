@@ -34,7 +34,7 @@ export default function OpengraphImage() {
           <img src={markSrc} width={340} height={432} />
         </div>
         {/* eslint-disable-next-line jsx-a11y/alt-text */}
-        <img src={wordSrc} width={360} height={70} />
+        <img src={wordSrc} width={Math.round((70 * EN_CAPS_BOX.w) / TEXT_BLOCK_H)} height={70} />
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 640 }}>
           <div style={{ fontSize: 22, letterSpacing: 4, color: "#2868A6", fontWeight: 600 }}>HUMAN-CENTERED TECHNOLOGY</div>
           <div style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.1, marginTop: 20 }}>Building technology that makes a difference.</div>
