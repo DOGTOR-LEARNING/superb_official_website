@@ -31,7 +31,7 @@ export async function Hero() {
           </p>
           <div className="hero-fade mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "300ms" }}>
             <PrimaryButton href="/work">{t("primaryCta")}</PrimaryButton>
-            <SecondaryButton href="/about" arrow={false}>
+            <SecondaryButton href="/solutions" arrow={false}>
               {t("secondaryCta")}
             </SecondaryButton>
           </div>

@@ -5,7 +5,7 @@
     "opensInNewTab": "(opens in a new tab)",
     "breadcrumbLabel": "Breadcrumb",
     "home": "Home",
-    "viewProject": "View Project",
+    "viewProject": "Explore product",
     "readMore": "Read more",
     "pending": "Pending",
     "pendingHint": "Not yet approved by the company — replace before launch (shown in development only)",
@@ -17,7 +17,7 @@
   "Nav": {
     "primary": "Primary navigation",
     "home": "Home",
-    "work": "Products & Work",
+    "work": "Products & Partnerships",
     "about": "About Us",
     "insights": "Insights",
     "contact": "Contact",
@@ -27,7 +27,8 @@
     "language": "Language",
     "switchTo": "Switch to Traditional Chinese",
     "currentLanguage": "Current language: English",
-    "logoLabel": "SuperB home"
+    "logoLabel": "SuperB home",
+    "solutions": "Solutions"
   },
   "Footer": {
     "tagline": "Building technology that makes a difference.",
@@ -40,18 +41,18 @@
     "social": "Social",
     "dogtorNote": "For DOGTOR subscriptions, sign-in and product support, please visit the DOGTOR website.",
     "rights": "All rights reserved.",
-    "trademark": "DOGTOR is a SuperB product. Rights to other works are as stated on each project page.",
+    "trademark": "DOGTOR is a SuperB product. Rights to other products are as stated on each product page.",
     "address": "Address",
     "phone": "Phone"
   },
   "Meta": {
-    "siteName": "SuperB Software Technology",
-    "titleTemplate": "%s | SuperB Software Technology",
-    "defaultTitle": "SuperB Software Technology | Human-centered EdTech",
+    "siteName": "SuperB Software",
+    "titleTemplate": "%s | SuperB Software",
+    "defaultTitle": "SuperB Software | Human-centered EdTech",
     "defaultDescription": "SuperB is a Taipei EdTech company building with AI, design and engineering. Our flagship product is DOGTOR, an AI learning app for secondary school students.",
     "work": {
-      "title": "Products & Work",
-      "description": "From our AI learning app DOGTOR to cross-disciplinary digital products — explore how the SuperB team creates value with technology."
+      "title": "Products & Partnerships",
+      "description": "Explore SuperB products and partner applications, from DOGTOR AI learning to education administration and digital platforms."
     },
     "dogtor": {
       "title": "DOGTOR | Product Story",
@@ -71,12 +72,12 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Privacy policy for the SuperB Software Technology website: what we collect, how we use and protect it."
+      "description": "Privacy policy for the SuperB Software website: what we collect, how we use and protect it."
     },
     "notFound": {
       "title": "Page not found"
     },
-    "keywords": "SuperB Software Technology,SuperB,education technology,EdTech,AI learning,DOGTOR,learning app Taiwan,human-computer interaction,Taipei"
+    "keywords": "SuperB Software,SuperB,education technology,EdTech,AI learning,DOGTOR,learning app Taiwan,human-computer interaction,Taipei"
   },
   "Home": {
     "hero": {
@@ -84,7 +85,7 @@
       "title": "Building technology that <hl>makes a difference</hl>.",
       "supporting": "We bring together AI, thoughtful design, and software engineering to create meaningful digital experiences, starting with education.",
       "primaryCta": "Explore our products",
-      "secondaryCta": "Meet SuperB",
+      "secondaryCta": "Explore our solutions",
       "visualLabel": "A geometric brand graphic derived from the SuperB logo: rounded diamonds with interlaced blue and gold lines"
     },
     "dogtor": {
@@ -125,10 +126,10 @@
       }
     },
     "work": {
-      "eyebrow": "BEYOND THE CLASSROOM",
-      "title": "Starting with education, <hl>exploring what's possible</hl>.",
-      "supporting": "Beyond education technology, we keep exploring AI applications, digital platforms and human-centered product design. These projects capture how our team members turn ideas into working products.",
-      "cta": "Explore more work"
+      "eyebrow": "PRODUCTS & PARTNERSHIPS",
+      "title": "Ideas built into <hl>useful products</hl>.",
+      "supporting": "From our own products to partner applications, we bring AI, design and engineering into teaching, administration and everyday life. Explore the needs and features behind each product.",
+      "cta": "Explore products & partnerships"
     },
     "build": {
       "eyebrow": "FROM IDEAS TO IMPACT",
@@ -190,9 +191,9 @@
   },
   "Work": {
     "hero": {
-      "eyebrow": "PRODUCTS & WORK",
-      "title": "Good products <hl>start with understanding the problem</hl>.",
-      "supporting": "From AI learning apps to cross-disciplinary digital products, we explore how technology creates value in different contexts."
+      "eyebrow": "PRODUCTS & PARTNERSHIPS",
+      "title": "Our products. <hl>What we build together.</hl>",
+      "supporting": "Discover our products and partner applications, bringing ideas from real education settings into everyday use."
     },
     "featured": {
       "eyebrow": "FLAGSHIP PRODUCT",
@@ -204,21 +205,21 @@
       "screensLabel": "Selected app screens"
     },
     "selected": {
-      "eyebrow": "SELECTED WORK",
-      "title": "More work",
-      "supporting": "These include projects our team members have worked on, past and present. Each card states how we were involved and the project's status.",
-      "notice": "Relationship labels describe how we were involved. They do not imply every project is owned by the company."
+      "eyebrow": "MORE PRODUCTS & COLLABORATIONS",
+      "title": "More products & collaborations",
+      "supporting": "Explore products we have helped build, from education administration to digital platforms, with their features and current status.",
+      "notice": "Each product includes our involvement and its current development status."
     },
     "filter": {
-      "label": "Filter projects by category",
+      "label": "Filter by application",
       "all": "All",
       "education": "Education",
       "ai-apps": "AI & Apps",
       "social-impact": "Social Impact",
       "business-systems": "Business Systems",
-      "count": "{count, plural, =0 {No matching projects} one {# project} other {# projects}}",
-      "empty": "There are no public projects in this category yet.",
-      "emptyAction": "View all projects"
+      "count": "{count, plural, =0 {No matching products} one {# product} other {# products}}",
+      "empty": "There are no public products in this category yet.",
+      "emptyAction": "View all products"
     }
   },
   "Category": {
@@ -237,15 +238,15 @@
   },
   "Relationship": {
     "flagship-product": "Flagship Product",
-    "team-member-project": "Team Member Project",
-    "team-capstone": "NTU Team Capstone",
-    "team-led-project": "Team-Led Project",
-    "collaborative-project": "Collaborative Project",
-    "selected-work": "Selected Work",
+    "team-member-project": "Team contribution",
+    "team-capstone": "NTU team project",
+    "team-led-project": "Team-led development",
+    "collaborative-project": "Co-developed",
+    "selected-work": "Product prototype",
     "client-work": "Client Work"
   },
   "Project": {
-    "breadcrumbWork": "Products & Work",
+    "breadcrumbWork": "Products & Partnerships",
     "year": "Year",
     "type": "Type",
     "status": "Status",
@@ -267,8 +268,8 @@
     "outcomesTitle": "Results, limits and research status",
     "credits": "Credits & Attribution",
     "creditsTitle": "Collaborators and attribution",
-    "next": "Next Project",
-    "nextLabel": "Next project",
+    "next": "Next Product",
+    "nextLabel": "Next product",
     "prototypeNotice": "This project is a {status} and is not commercially operated. It documents our team's exploration and build process.",
     "externalLinks": "Related links",
     "outcomeKind": {
@@ -285,7 +286,7 @@
       "eyebrow": "FLAGSHIP PRODUCT · DOGTOR",
       "title": "DOGTOR",
       "subtitle": "Helping every student find <hl>a way of learning that fits</hl>.",
-      "body": "DOGTOR is an AI learning app developed and operated by SuperB Software Technology. This is its story: why we built it, which learning problem it tackles, and what we want to explore next."
+      "body": "DOGTOR is an AI learning app developed and operated by SuperB Software. This is its story: why we built it, which learning problem it tackles, and what we want to explore next."
     },
     "problem": {
       "eyebrow": "THE PROBLEM",
@@ -561,7 +562,73 @@
     "title": "This page doesn't exist, or it has moved.",
     "body": "The address may be mistyped, or the content may have been updated. You can keep exploring from here.",
     "home": "Back to home",
-    "work": "See products & work",
+    "work": "See products & partnerships",
     "contact": "Contact us"
+  },
+  "Solutions": {
+    "eyebrow": "EDUCATION SOLUTIONS",
+    "title": "More time to teach.",
+    "highlight": "Less time on admin.",
+    "description": "Digital tools shaped around tutoring centers, education organizations and teaching teams. From AI parent updates and grading to scheduling and payments, give your team more time for students.",
+    "metaTitle": "AI Tools & Custom Software for Tutoring Centers",
+    "metaDescription": "Custom education software for tutoring centers: AI parent reports, grading, question banks, homework apps, attendance alerts, scheduling, tuition management and enrollment CRM.",
+    "primaryCta": "Tell us what you need",
+    "secondaryCta": "Explore the possibilities",
+    "catalogEyebrow": "BUILT AROUND YOUR EVERYDAY",
+    "catalogTitle": "Better tools for the work you do every day.",
+    "catalogBody": "Start with the workflow you most want to improve, then connect more tools over time. These are directions we can scope and develop around your needs.",
+    "all": "All applications",
+    "categories": {
+      "communication": "Communication",
+      "teaching": "Teaching & assessment",
+      "operations": "Center operations"
+    },
+    "filterLabel": "Filter education solutions by need",
+    "count": "{count} application ideas",
+    "empty": "No matching applications.",
+    "cardCta": "Discuss this idea",
+    "customLabel": "Custom development",
+    "processEyebrow": "FROM YOUR WORKFLOW TO YOUR TOOL",
+    "processTitle": "Build the right tool around your workflow.",
+    "steps": {
+      "understand": {
+        "title": "Understand the need",
+        "body": "Show us how things work today, what takes the most time and what teachers, parents or staff need."
+      },
+      "design": {
+        "title": "Make the idea tangible",
+        "body": "Define priorities, workflows and interface prototypes, then agree on scope, timing and cost."
+      },
+      "build": {
+        "title": "Build, connect and improve",
+        "body": "Develop a website, app or LINE tool, connect your existing data and services, and refine it with real feedback."
+      }
+    },
+    "faqEyebrow": "A FEW THINGS YOU MIGHT ASK",
+    "faqTitle": "A few questions before we start.",
+    "faq": {
+      "ready": {
+        "q": "Are these tools ready to buy?",
+        "a": "This page describes custom development directions. Features are scoped around your teaching context, data and integrations. Visit Products & Partnerships for existing products such as DOGTOR."
+      },
+      "integrate": {
+        "q": "Can you connect LINE, spreadsheets or our existing system?",
+        "a": "We can assess this together. Share your tools, data formats and expected workflow so we can check APIs, imports and access permissions before proposing an integration."
+      },
+      "scope": {
+        "q": "Can a small tutoring center start with a custom tool?",
+        "a": "Start with one workflow, such as homework reminders, arrival alerts or grade reports. We will discuss users, essential features and budget to define an appropriate first step."
+      },
+      "ai": {
+        "q": "Can teachers review AI-generated questions, grades and messages?",
+        "a": "Yes. The workflow can let AI prepare drafts or suggestions for teachers to review before publishing, recording grades or sending messages, with an edit and action history."
+      }
+    },
+    "previewTitle": "What could work better <hl>in your education setting?</hl>",
+    "previewBody": "Parent updates, homework, attendance, scheduling and payments. Start with a real need and build a tool that fits.",
+    "previewCta": "Explore education solutions",
+    "existingTitle": "Want to see what we have built?",
+    "existingBody": "Explore DOGTOR and other products to see how we turn needs into applications.",
+    "existingCta": "Explore products & partnerships"
   }
 }

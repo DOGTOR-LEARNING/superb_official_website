@@ -11,6 +11,7 @@ import { cn } from "@/lib/cn";
 import { buttonClasses, ButtonArrow } from "@/components/ui/Button";
 import { FieldError, FormField, inputClasses } from "@/components/ui/FormField";
 import { SuccessState } from "@/components/ui/States";
+import { educationSolutions } from "@/content/education-solutions";
 
 type Values = {
   name: string;
@@ -49,7 +50,17 @@ export function ContactForm({ contactEmail }: { contactEmail: string }) {
 
   useEffect(() => {
     startedAt.current = Date.now();
-  }, []);
+    const slug = new URLSearchParams(window.location.search).get("solution");
+    const solution = educationSolutions.find((item) => item.slug === slug);
+    if (solution) {
+      const title = solution.content[locale === "en" ? "en" : "zh-TW"].title;
+      setValues((current) => ({
+        ...current,
+        inquiryType: current.inquiryType || "education",
+        message: current.message || (locale === "en" ? `I'd like to discuss ${title}.\n\nOur current workflow and needs:\n` : `我想了解「${title}」的客製開發。\n\n目前的作業方式與需求：\n`),
+      }));
+    }
+  }, [locale]);
 
   useEffect(() => {
     if (summaryFocusTick) summaryRef.current?.focus();

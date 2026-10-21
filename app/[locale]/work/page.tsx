@@ -15,6 +15,7 @@ import { FilterableGrid } from "@/components/ui/FilterableGrid";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { FeaturedDogtorShowcase } from "@/components/sections/work/FeaturedDogtorShowcase";
 import { FinalCta } from "@/components/sections/home/FinalCta";
+import { TextLink } from "@/components/ui/TextLink";
 import { Info } from "lucide-react";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/work">): Promise<Metadata> {
@@ -27,6 +28,7 @@ export default async function WorkPage({ params }: PageProps<"/[locale]/work">) 
   const locale = await resolveLocale(params);
   const t = await getTranslations("Work");
   const tn = await getTranslations("Nav");
+  const ts = await getTranslations("Solutions");
 
   const options = [{ value: "all", label: t("filter.all") }, ...projectCategories.map((c) => ({ value: c, label: t(`filter.${c}`) }))];
   const counts = Object.fromEntries(
@@ -58,6 +60,13 @@ export default async function WorkPage({ params }: PageProps<"/[locale]/work">) 
       </section>
 
       <FeaturedDogtorShowcase locale={locale} />
+
+      <Container>
+        <aside className="mb-12 flex flex-col gap-5 rounded-[var(--radius-card)] border border-brand/15 bg-soft-blue px-7 py-6 sm:flex-row sm:items-center sm:justify-between">
+          <div><h2 className="font-semibold">{ts("previewTitle").replace(/<\/?hl>/g, "")}</h2><p className="mt-2 max-w-2xl text-[0.9375rem] text-muted">{ts("previewBody")}</p></div>
+          <TextLink href="/solutions" className="shrink-0">{ts("previewCta")}</TextLink>
+        </aside>
+      </Container>
 
       <Section tone="page" labelledBy="selected-title" className="!pt-6 md:!pt-10">
         <SectionHeading id="selected-title" eyebrow={t("selected.eyebrow")} title={t("selected.title")} supporting={t("selected.supporting")} />

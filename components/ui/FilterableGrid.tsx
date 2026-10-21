@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { AnimatePresence } from "motion/react";
 import * as m from "motion/react-m";
 import { CategoryFilter, type FilterOption } from "./CategoryFilter";
@@ -15,6 +15,7 @@ export function FilterableGrid({
   labels,
   counts,
   gridClassName,
+  revealLinkedItem = false,
 }: {
   items: FilterableItem[];
   /** 第一個選項需為 "all" */
@@ -23,10 +24,32 @@ export function FilterableGrid({
   /** 各分類預先翻譯好的數量文字（含複數規則） */
   counts: Record<string, string>;
   gridClassName?: string;
+  /** 方案頁的卡片深層連結應能顯示被篩選隱藏的項目。 */
+  revealLinkedItem?: boolean;
 }) {
   const [active, setActive] = useState("all");
+  const [linkedId, setLinkedId] = useState("");
   const gridId = useId();
   const visible = active === "all" ? items : items.filter((item) => item.categories.includes(active));
+
+  useEffect(() => {
+    if (!revealLinkedItem) return;
+    const reveal = () => {
+      const id = window.location.hash.slice(1);
+      if (!items.some((item) => item.id === id)) return;
+      setActive("all");
+      setLinkedId(id);
+    };
+    reveal();
+    window.addEventListener("hashchange", reveal);
+    return () => window.removeEventListener("hashchange", reveal);
+  }, [items, revealLinkedItem]);
+
+  useEffect(() => {
+    if (!linkedId) return;
+    document.getElementById(linkedId)?.scrollIntoView({ block: "start" });
+    setLinkedId("");
+  }, [linkedId]);
 
   return (
     <div>

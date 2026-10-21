@@ -1,3 +1,4 @@
+import { educationSolutions } from "@/content/education-solutions";
 import { dogtor } from "@/content/projects/dogtor";
 import { projects } from "@/content/projects";
 import { insights } from "@/content/insights";
@@ -33,7 +34,7 @@ function metrics() {
 }
 
 export function llmsTxt() {
-  return `# ${siteConfig.companyName.zh} SuperB Software Technology
+  return `# ${siteConfig.companyName.zh} SuperB Software
 
 > ${organizationDescription["zh-TW"]}
 > ${organizationDescription.en}
@@ -44,20 +45,25 @@ ${facts()}
 
 ## Main pages
 
-- [首頁 Home](${url("/")}): 品牌理念、DOGTOR、精選作品、開發方法
+- [首頁 Home](${url("/")}): 品牌理念、DOGTOR、產品與合作、教育解決方案、開發方法
 - [DOGTOR 逗課產品故事](${url("/products/dogtor")}): 為什麼打造 DOGTOR、做法、真實畫面與經核實的成果數據
-- [產品與作品 Products & Work](${url("/work")}): 旗艦產品與團隊成員參與的作品（標示參與關係與狀態）
+- [產品與合作 Products & Partnerships](${url("/work")}): 自有產品與參與打造的應用（標示參與關係與狀態）
+- [教育解決方案 Education Solutions](${url("/solutions")}): 面向教育與補教機構的客製軟體開發，包含家長通知、AI 批改、題庫、作業 App、出缺席與營運系統
 - [關於我們 About](${url("/about")}): 公司故事、使命願景、團隊、能力、公司簡介與常見問題
 - [觀點與研究 Insights](${url("/insights")}): 教育科技、AI 與產品設計的觀點與公司消息
 - [聯絡我們 Contact](${url("/contact")}): 合作洽詢
 - English versions: ${url("/", "en")}
+
+## Education solutions (custom development directions, not ready-made products)
+
+${educationSolutions.map((s) => `- [${s.content["zh-TW"].title}](${url(`/solutions#${s.slug}`)}): ${s.content["zh-TW"].description} / ${s.content.en.title}`).join("\n")}
 
 ## DOGTOR key facts
 
 - ${dogtor.url.value} — App Store: ${dogtor.stores.appStore} — Google Play: ${dogtor.stores.googlePlay}
 ${metrics()}
 
-## Work
+## Products & Partnerships
 
 ${projects.map((p) => `- [${p.localeContent["zh-TW"].title}](${url(`/work/${p.slug}`)}): ${p.localeContent["zh-TW"].summary}`).join("\n")}
 

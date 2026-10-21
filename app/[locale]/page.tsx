@@ -10,6 +10,7 @@ import { SelectedWork } from "@/components/sections/home/SelectedWork";
 import { HowWeBuild } from "@/components/sections/home/HowWeBuild";
 import { AboutPreview } from "@/components/sections/home/AboutPreview";
 import { FinalCta } from "@/components/sections/home/FinalCta";
+import { SolutionsPreview } from "@/components/sections/home/SolutionsPreview";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const locale = await resolveLocale(params);
@@ -30,6 +31,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Hero />
       <FeaturedDogtor locale={locale} />
       <Beliefs />
+      <SolutionsPreview locale={locale} />
       <SelectedWork locale={locale} />
       <HowWeBuild />
       <AboutPreview />

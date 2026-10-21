@@ -8,7 +8,7 @@ import { absoluteUrl } from "@/lib/site-config";
 /** 內容最後更新日期：更新頁面內容時請一併調整 */
 const SITE_UPDATED = "2026-10-21";
 
-const staticPaths = ["/", "/work", "/products/dogtor", "/about", "/insights", "/contact", "/privacy"];
+const staticPaths = ["/", "/work", "/solutions", "/products/dogtor", "/about", "/insights", "/contact", "/privacy"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths: { path: string; updated: string }[] = [

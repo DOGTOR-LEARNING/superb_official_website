@@ -5,7 +5,7 @@
     "opensInNewTab": "（另開新分頁）",
     "breadcrumbLabel": "麵包屑導覽",
     "home": "首頁",
-    "viewProject": "查看作品",
+    "viewProject": "了解產品",
     "readMore": "閱讀更多",
     "pending": "待確認",
     "pendingHint": "此資料尚未經公司核准，正式上線前需替換（僅開發模式顯示）",
@@ -17,7 +17,7 @@
   "Nav": {
     "primary": "主要導覽",
     "home": "首頁",
-    "work": "產品與作品",
+    "work": "產品與合作",
     "about": "關於我們",
     "insights": "觀點與研究",
     "contact": "聯絡我們",
@@ -27,7 +27,8 @@
     "language": "語言",
     "switchTo": "切換為英文",
     "currentLanguage": "目前語言：繁體中文",
-    "logoLabel": "SuperB 首頁"
+    "logoLabel": "SuperB 首頁",
+    "solutions": "教育解決方案"
   },
   "Footer": {
     "tagline": "讓科技不只解決問題，更創造改變。",
@@ -40,7 +41,7 @@
     "social": "社群",
     "dogtorNote": "DOGTOR 訂閱、登入及產品客服，請前往 DOGTOR 官網。",
     "rights": "版權所有。",
-    "trademark": "DOGTOR 逗課為 SuperB 旗下產品。其他作品之權利歸屬依各作品頁標示。",
+    "trademark": "DOGTOR 逗課為 SuperB 旗下產品。其他產品之權利歸屬依各產品頁標示。",
     "address": "地址",
     "phone": "電話"
   },
@@ -50,8 +51,8 @@
     "defaultTitle": "SuperB 超棒軟體科技｜以教育為起點的科技公司",
     "defaultDescription": "超棒軟體科技（SuperB）以教育科技為核心，結合人工智慧、軟體工程與以人為本的設計，打造真正能融入生活、帶來正向影響的數位產品。旗艦產品為 DOGTOR 逗課。",
     "work": {
-      "title": "產品與作品",
-      "description": "從 AI 學習應用 DOGTOR 到跨領域數位產品，探索 SuperB 團隊如何以科技在不同情境下創造價值。"
+      "title": "產品與合作",
+      "description": "探索 SuperB 的現有產品與合作應用：從 AI 學習 App DOGTOR 逗課，到教學行政、數位平台與跨領域產品。"
     },
     "dogtor": {
       "title": "DOGTOR 逗課｜產品故事",
@@ -76,7 +77,7 @@
     "notFound": {
       "title": "找不到頁面"
     },
-    "keywords": "超棒軟體科技,超棒軟體,SuperB,SuperB Software Technology,教育科技,EdTech,AI 學習,DOGTOR,逗課,國高中學習 App,人機互動,精湛教育"
+    "keywords": "超棒軟體科技,超棒軟體,SuperB,SuperB Software,教育科技,EdTech,AI 學習,DOGTOR,逗課,國高中學習 App,人機互動,精湛教育"
   },
   "Home": {
     "hero": {
@@ -84,7 +85,7 @@
       "title": "讓科技不只解決問題，<br></br>更<hl>創造改變</hl>。",
       "supporting": "我們以教育為起點，結合人工智慧、設計與軟體工程，打造真正讓生活變得更好的數位產品。",
       "primaryCta": "探索我們的產品",
-      "secondaryCta": "認識 SuperB",
+      "secondaryCta": "看看我們能幫你做什麼",
       "visualLabel": "由 SuperB Logo 延伸的幾何品牌圖形：圓角菱形與交錯的藍黃線條"
     },
     "dogtor": {
@@ -125,10 +126,10 @@
       }
     },
     "work": {
-      "eyebrow": "BEYOND THE CLASSROOM",
-      "title": "從教育出發，<hl>探索更多可能</hl>。",
-      "supporting": "除了教育科技，我們也持續探索 AI 應用、數位平台與以人為本的產品設計。這些作品記錄了團隊成員將不同想法轉化為實際產品的經驗。",
-      "cta": "探索更多作品"
+      "eyebrow": "PRODUCTS & PARTNERSHIPS",
+      "title": "把想法，<hl>做成用得上的產品</hl>。",
+      "supporting": "從自有產品到合作應用，我們將 AI、設計與軟體工程帶進教學、行政與日常生活。認識產品背後的需求、功能與實際應用。",
+      "cta": "探索產品與合作"
     },
     "build": {
       "eyebrow": "FROM IDEAS TO IMPACT",
@@ -190,9 +191,9 @@
   },
   "Work": {
     "hero": {
-      "eyebrow": "PRODUCTS & WORK",
-      "title": "好的產品，<hl>從理解問題開始</hl>。",
-      "supporting": "從 AI 學習應用到跨領域數位產品，我們探索科技如何在不同情境下創造價值。"
+      "eyebrow": "PRODUCTS & PARTNERSHIPS",
+      "title": "我們打造的產品，<hl>與一起實現的可能</hl>。",
+      "supporting": "認識 SuperB 的自有產品與合作應用，從教育現場出發，讓好的想法走進日常。"
     },
     "featured": {
       "eyebrow": "FLAGSHIP PRODUCT",
@@ -204,21 +205,21 @@
       "screensLabel": "精選 App 畫面"
     },
     "selected": {
-      "eyebrow": "SELECTED WORK",
-      "title": "更多作品",
-      "supporting": "以下作品包含團隊成員過去或目前參與的專案。每張卡片都標示了作品的參與關係與開發狀態。",
-      "notice": "作品關係標示說明實際參與方式，不代表每個作品都屬於公司資產。"
+      "eyebrow": "MORE PRODUCTS & COLLABORATIONS",
+      "title": "更多產品與合作",
+      "supporting": "從教學行政到數位平台，了解我們參與打造的產品、應用方式與目前進度。",
+      "notice": "各產品保留實際參與關係與開發狀態，方便了解合作背景與目前進度。"
     },
     "filter": {
-      "label": "依分類篩選作品",
+      "label": "依應用領域篩選",
       "all": "全部",
       "education": "教育",
       "ai-apps": "AI 與應用",
       "social-impact": "社會影響",
       "business-systems": "商業系統",
-      "count": "{count, plural, =0 {沒有符合的作品} other {共 # 件作品}}",
-      "empty": "這個分類目前沒有可公開的作品。",
-      "emptyAction": "查看全部作品"
+      "count": "{count, plural, =0 {沒有符合的產品} other {共 # 項產品}}",
+      "empty": "這個分類目前沒有可公開的產品。",
+      "emptyAction": "查看全部產品"
     }
   },
   "Category": {
@@ -237,15 +238,15 @@
   },
   "Relationship": {
     "flagship-product": "Flagship Product 旗艦產品",
-    "team-member-project": "Team Member Project 團隊成員作品",
-    "team-capstone": "NTU Team Capstone 臺大團隊專題",
-    "team-led-project": "Team-Led Project 團隊主導作品",
-    "collaborative-project": "Collaborative Project 合作作品",
-    "selected-work": "Selected Work 精選作品",
+    "team-member-project": "參與開發",
+    "team-capstone": "臺大團隊專題",
+    "team-led-project": "團隊主導開發",
+    "collaborative-project": "合作開發",
+    "selected-work": "產品原型",
     "client-work": "Client Work 客戶專案"
   },
   "Project": {
-    "breadcrumbWork": "產品與作品",
+    "breadcrumbWork": "產品與合作",
     "year": "年度",
     "type": "類型",
     "status": "狀態",
@@ -267,9 +268,9 @@
     "outcomesTitle": "成果、限制與研究狀態",
     "credits": "Credits & Attribution",
     "creditsTitle": "合作團隊與授權標示",
-    "next": "Next Project",
-    "nextLabel": "下一個作品",
-    "prototypeNotice": "此作品為{status}，尚未正式商業化營運。內容呈現的是團隊的探索與實作過程。",
+    "next": "Next Product",
+    "nextLabel": "下一個產品",
+    "prototypeNotice": "此產品為{status}，尚未正式商業化營運。內容呈現的是團隊的探索與實作過程。",
     "externalLinks": "相關連結",
     "outcomeKind": {
       "outcome": "成果",
@@ -561,7 +562,73 @@
     "title": "這個頁面不存在，或已經移動了。",
     "body": "可能是網址輸入有誤，或內容已經更新。你可以從以下頁面繼續探索。",
     "home": "回到首頁",
-    "work": "看看產品與作品",
+    "work": "看看產品與合作",
     "contact": "聯絡我們"
+  },
+  "Solutions": {
+    "eyebrow": "EDUCATION SOLUTIONS",
+    "title": "讓教學更專注，",
+    "highlight": "讓日常更省心。",
+    "description": "為補習班、教育機構與教學團隊打造合適的數位工具。從 AI 家長聯絡、智慧批改到排課收費，把重複的事交給系統，把時間留給學生。",
+    "metaTitle": "補習班 AI 系統與教育軟體客製開發｜教育解決方案",
+    "metaDescription": "SuperB 為補習班與教育機構規劃客製軟體：AI 家長成績與作業通知、智慧批改、AI 出題題庫、作業發派 App、學生出缺席通知、排課、學費收繳與招生 CRM。從需求討論到系統開發與串接。",
+    "primaryCta": "聊聊你的需求",
+    "secondaryCta": "探索應用方向",
+    "catalogEyebrow": "BUILT AROUND YOUR EVERYDAY",
+    "catalogTitle": "你每天遇到的事，都可以有更好的做法。",
+    "catalogBody": "從一個最想改善的流程開始，也能逐步串接成完整系統。以下是可依需求規劃與客製開發的產品方向。",
+    "all": "全部應用",
+    "categories": {
+      "communication": "親師溝通",
+      "teaching": "教學與評量",
+      "operations": "補教營運"
+    },
+    "filterLabel": "依需求篩選教育解決方案",
+    "count": "{count} 種應用方向",
+    "empty": "目前沒有符合的應用方向。",
+    "cardCta": "討論這個需求",
+    "customLabel": "可客製開發",
+    "processEyebrow": "FROM YOUR WORKFLOW TO YOUR TOOL",
+    "processTitle": "從你熟悉的流程，開始做對的工具。",
+    "steps": {
+      "understand": {
+        "title": "一起釐清需求",
+        "body": "告訴我們目前怎麼做、哪裡最花時間，以及老師、家長或行政人員真正需要什麼。"
+      },
+      "design": {
+        "title": "先看見產品輪廓",
+        "body": "整理功能優先順序、使用流程與介面原型，再一起確認開發範圍、時程與費用。"
+      },
+      "build": {
+        "title": "開發、串接與調整",
+        "body": "依需求開發網站、App 或 LINE 工具，銜接既有資料與服務，隨現場回饋逐步調整。"
+      }
+    },
+    "faqEyebrow": "A FEW THINGS YOU MIGHT ASK",
+    "faqTitle": "開始之前，你可能想知道。",
+    "faq": {
+      "ready": {
+        "q": "這些工具都可以直接購買使用嗎？",
+        "a": "這一頁整理的是可洽談的客製開發方向，功能會依你的教學情境、資料與串接需求規劃。想先認識現有產品，可以到「產品與合作」查看 DOGTOR 等應用。"
+      },
+      "integrate": {
+        "q": "可以串接既有的 LINE、試算表或補習班系統嗎？",
+        "a": "可以一起評估。請提供目前使用的工具、資料格式與預期流程，我們會確認 API、資料匯入與帳號權限等條件，再提出合適的串接方式。"
+      },
+      "scope": {
+        "q": "小型補習班也適合做客製系統嗎？",
+        "a": "可以從單一流程開始，例如作業催繳、到班通知或成績報表，不必一次建置完整平台。我們會先釐清使用人數、必要功能與預算，再討論適合的第一階段。"
+      },
+      "ai": {
+        "q": "AI 出題、批改與家長訊息能保留老師確認嗎？",
+        "a": "可以。流程可規劃為 AI 先產生草稿或建議，由老師確認後再發布、登錄分數或發送訊息，並保留修改與處理紀錄。"
+      }
+    },
+    "previewTitle": "你的教育現場，<hl>還有哪些事可以更好？</hl>",
+    "previewBody": "家長通知、作業發派、學生出缺席、排課與收費。從具體需求出發，打造適合你的工具。",
+    "previewCta": "探索教育解決方案",
+    "existingTitle": "想先看看我們已經做了什麼？",
+    "existingBody": "認識 DOGTOR 與其他產品，看看我們如何把需求做成實際應用。",
+    "existingCta": "認識產品與合作"
   }
 }
