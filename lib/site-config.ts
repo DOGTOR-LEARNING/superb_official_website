@@ -17,7 +17,7 @@ export const siteConfig = {
   companyName: {
     zh: "超棒軟體科技有限公司",
     /** 英文簡稱（Logo、品牌名稱） */
-    en: "SuperB Software Technology",
+    en: "SuperB Software",
     /** 英文正式全名（公司資訊、版權、法律文件） */
     enLegal: "SuperB Software Technology Co., Ltd.",
   },

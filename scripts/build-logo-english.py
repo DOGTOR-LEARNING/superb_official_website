@@ -1,7 +1,7 @@
 """
-產生 Logo 橫式組合的英文名稱路徑（SUPERB SOFTWARE TECHNOLOGY）。
+產生 Logo 橫式組合的英文名稱路徑（SUPERB SOFTWARE）。
 字型：Montserrat（SIL OFL 1.1，fonts/OFL-Montserrat.txt），全大寫，左緣與中文對齊、底部對齊標誌底座。
-比例參考精湛教育 Logo：英文為半粗體、大寫字高約為中文字高的 25%（英文名稱較長，寬度約為中文的 1.36 倍）。
+比例參考精湛教育 Logo：英文為半粗體、中文縮為原始字高的 68%，英文大寫字高為原始中文字高的 42%。
 
 用法：python3 scripts/build-logo-english.py <paths.json>
 """
@@ -14,11 +14,11 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
-TEXT = "SUPERB SOFTWARE TECHNOLOGY"
+TEXT = "SUPERB SOFTWARE"
 WEIGHT = 600
 TRACKING = 10  # 字距（字型單位，UPM 1000）
-CAP_RATIO = 0.25  # 英文大寫字高 ÷ 中文字高
-GAP_RATIO = 0.20  # 中英文行距 ÷ 中文字高
+CAP_RATIO = 0.42  # 英文大寫字高 ÷ 中文字高
+GAP_RATIO = 0.15  # 中英文行距 ÷ 中文字高
 # 中文名稱在原始 Logo 圖檔中的範圍
 ZH_X0, ZH_X1, ZH_TOP, ZH_BOTTOM = 361, 1102, 1055, 1208
 
@@ -41,7 +41,7 @@ zh_h = ZH_BOTTOM - ZH_TOP
 cap_h = zh_h * CAP_RATIO
 scale = cap_h / font["OS/2"].sCapHeight
 en_w = natural * scale
-block_h = zh_h * (1 + GAP_RATIO + CAP_RATIO)
+block_h = zh_h * (0.68 + GAP_RATIO + CAP_RATIO)
 baseline = ZH_TOP + block_h
 
 pen = SVGPathPen(gs, ntos=lambda v: f"{v:.2f}".rstrip("0").rstrip("."))

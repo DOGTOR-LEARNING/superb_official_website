@@ -1,9 +1,9 @@
 import { cn } from "@/lib/cn";
-import { EN_CAPS_BOX, LOGO_COLORS, MARK_BOX, TEXT_BLOCK_H, ZH_BOX, logoPaths } from "./logo-paths";
+import { EN_CAPS_BOX, LOGO_COLORS, MARK_BOX, TEXT_BLOCK_H, ZH_BOX, ZH_SCALE, logoPaths } from "./logo-paths";
 
 /**
  * SuperB 正式 Logo（由 public/brand/superb_logo.png 向量化）。
- * 標誌與文字皆維持原始比例與造型，只做組合排列（spec §11.7、§15.3）。
+ * 保留原始字形與標誌；中文縮小、英文放大，名稱使用 SUPERB SOFTWARE。
  * 規範：標誌與文字區塊等高；中文名稱下方一律搭配英文名稱。
  */
 
@@ -20,10 +20,10 @@ function MarkPaths({ tone }: { tone: Tone }) {
 
 function ZhPaths({ tone }: { tone: Tone }) {
   return (
-    <>
+    <g transform={`translate(361 1055) scale(${ZH_SCALE}) translate(-361 -1055)`}>
       <path fillRule="evenodd" fill={tone === "white" ? "#FFFFFF" : LOGO_COLORS.ink} d={logoPaths.blackZh} />
       <path fillRule="evenodd" fill={tone === "white" ? "#FFFFFF" : LOGO_COLORS.blue} d={logoPaths.blueZh} />
-    </>
+    </g>
   );
 }
 
@@ -42,7 +42,7 @@ export function BrandMark({ className, title, tone = "color" }: { className?: st
   );
 }
 
-/** 文字區塊：上方中文名稱、下方全大寫英文名稱（與中文等寬，底部對齊標誌底座） */
+/** 文字區塊：上方較小中文、下方放大的英文名稱，底部對齊標誌底座 */
 const TEXT_TOP = ZH_BOX.y;
 const TEXT_W = EN_CAPS_BOX.w;
 /** 標誌縮放到與文字區塊等高 */
@@ -58,7 +58,7 @@ const TEXT_X = MARK_W * 1.38;
 export function BrandLogo({
   className,
   tone = "color",
-  title = "超棒軟體 SuperB Software Technology",
+  title = "超棒軟體 SuperB Software",
 }: {
   className?: string;
   tone?: Tone;

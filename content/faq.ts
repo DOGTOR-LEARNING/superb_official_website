@@ -9,7 +9,7 @@ export const faq: { id: string; q: Localized<string>; a: Localized<string> }[] =
     id: "what-is-superb",
     q: {
       "zh-TW": "超棒軟體科技是什麼樣的公司？",
-      en: "What kind of company is SuperB Software Technology?",
+      en: "What kind of company is SuperB Software?",
     },
     a: {
       "zh-TW":
@@ -32,7 +32,7 @@ export const faq: { id: string; q: Localized<string>; a: Localized<string> }[] =
     a: {
       "zh-TW":
         "DOGTOR 由超棒軟體科技開發與營運。產品由台大學生團隊與精湛教育的補習班老師聯手開發，並由多位國立臺灣大學教授在 AI、軟體、人機互動與學習互動等方面擔任顧問。",
-      en: "DOGTOR is developed and operated by SuperB Software Technology. It was built by a team of National Taiwan University students together with teachers from Superb Education, with several NTU professors advising on AI, software, human–computer interaction and learning interaction.",
+      en: "DOGTOR is developed and operated by SuperB Software. It was built by a team of National Taiwan University students together with teachers from Superb Education, with several NTU professors advising on AI, software, human–computer interaction and learning interaction.",
     },
   },
   {

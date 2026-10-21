@@ -53,7 +53,7 @@ export function SiteHeader({ dogtorUrl }: { dogtorUrl: string }) {
     >
       <div className="container-site flex h-[72px] items-center justify-between gap-6 lg:h-20">
         <Link href="/" aria-label={t("logoLabel")} className="-m-1 rounded-lg p-1">
-          <BrandLogo className="h-10 lg:h-11" />
+          <BrandLogo className="h-9 shrink-0 lg:h-10" />
         </Link>
 
         <DesktopNav />
