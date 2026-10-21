@@ -8,8 +8,8 @@ export function DogtorLogo({ locale, className }: { locale: Locale; className?: 
   const { zh, en, alt } = dogtor.logo;
   return (
     <span role="img" aria-label={alt[locale]} className={cn("flex w-fit items-center gap-3", className)}>
-      <Image src={zh.src} alt="" width={zh.width} height={zh.height} unoptimized className="h-12 w-auto" />
-      <Image src={en.src} alt="" width={en.width} height={en.height} unoptimized className="h-5 w-auto" />
+      <Image src={zh.src} alt="" width={zh.width} height={zh.height} unoptimized className="h-7 w-auto sm:h-8" />
+      <Image src={en.src} alt="" width={en.width} height={en.height} unoptimized className="h-7 w-auto sm:h-8" />
     </span>
   );
 }
